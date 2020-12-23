@@ -1,0 +1,149 @@
+/*
+Click logo to restart animation.
+
+Source Code:
+
+https://github.com/robole/title-sequences
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
+
+:root {
+  --glow-color: rgb(252, 231, 115);
+}
+body {
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-family: "Playfair Display", "Vidaloka", serif;
+  font-size: 10rem;
+  color: white;
+  perspective: 3000px;
+}
+
+.word {
+  display: block;
+  transform: rotateX(100deg);
+  transform-origin: bottom center;
+  opacity: 0;
+}
+
+.word:nth-of-type(2) {
+  color: gold;
+}
+
+.superscript {
+  position: relative;
+  padding: 0 0.2rem;
+  vertical-align: super;
+  font-size: 7rem;
+}
+
+.superscript:before {
+  content: "S";
+  position: absolute;
+  top: 21%;
+  left: 0;
+  font-size: 75%;
+  padding: inherit;
+  color: var(--glow-color);
+  vertical-align: super;
+  z-index: -1;
+  opacity: 0;
+  transform: scale(1.05);
+  filter: blur(5px);
+}
+
+.bar {
+  position: absolute;
+  width: 0.125rem;
+  height: 4.5rem;
+  background-color: white;
+  top: 38%;
+  z-index: 3;
+  transform: scale(0);
+}
+
+.bar:nth-of-type(1) {
+  left: 45%;
+}
+
+.bar:nth-of-type(2) {
+  left: 55%;
+}
+
+#glow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(250, 239, 175);
+  opacity: 1;
+  top: 37%;
+  left: 42%;
+  opacity: 0;
+  z-index: 5;
+  filter: blur(1px);
+  transform: scale(0.25);
+}
+
+#glow:before {
+  border-bottom: 200px solid gold;
+  border-left: 2px solid transparent;
+  border-right: 1px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: block;
+  content: "";
+  transform: rotate(90deg) translate(-95px, -20px);
+  filter: blur(1px);
+  opacity: 0;
+}
+
+#glow:after {
+  position: absolute;
+  display: block;
+  color: rgb(55, 0, 255);
+  width: 0px;
+  height: 0px;
+  border-right: 150px solid transparent;
+  border-bottom: 2px solid gold;
+  border-left: 4px solid transparent;
+  transform: rotate(40deg) translate(-30px, 50px);
+  content: "";
+  filter: blur(1px);
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .superscript {
+    font-size: 4rem;
+  }
+
+  .bar {
+    height: 2.5rem;
+    width: 0.1rem;
+  }
+
+  #glow {
+    left: 38%;
+  }
+
+  #glow:before {
+    border-bottom: 100px solid gold;
+    transform: rotate(90deg) translate(-45px, -20px);
+  }
+
+  #glow:after {
+    border-right: 100px solid transparent;
+    transform: rotate(40deg) translate(-10px, 32px);
+  }
+}

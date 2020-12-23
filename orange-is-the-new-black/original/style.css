@@ -1,0 +1,145 @@
+/*
+Click logo to restart animation.
+
+Click unmute button for sound fx.
+
+Source Code:
+
+https://github.com/robole/title-sequences
+*/
+
+:root {
+  --width: 400px;
+  --animation-duration: 0.75s;
+}
+
+@media (min-width: 960px) {
+  :root {
+    --width: 600px;
+  }
+
+  body {
+    /* background-image: url(img/bg-large.jpg); */
+    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg);
+  }
+
+  main {
+    height: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 959px) {
+  body {
+    /* background-image: url(img/bg-med.jpg); */
+    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg);
+  }
+
+  main {
+    height: 640px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --width: 200px;
+  }
+
+  main {
+    height: 320px;
+  }
+
+  body {
+    /* background-image: url(img/bg-small.jpg); */
+    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg);
+  }
+}
+
+body {
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: start;
+  align-items: center;
+}
+
+svg {
+  display: block;
+  width: var(--width);
+}
+
+.animation1 {
+  animation: close var(--animation-duration) forwards;
+}
+
+.animation2 {
+  animation: close var(--animation-duration) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes close {
+  to {
+    transform: translateX(90%);
+  }
+}
+
+.writing {
+  opacity: 0;
+}
+
+.appear-animation {
+  animation: appear 0.1s forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  height: calc(1.5rem + 2vw);
+  width: calc(1.5rem + 2vw);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+}
+
+label > svg {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  right: 10%;
+}
+
+label path {
+  fill: orange;
+}
+
+label .mute-off {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+:checked ~ label .mute-off {
+  display: block;
+}
+
+:checked ~ label .mute-on {
+  display: none;
+}

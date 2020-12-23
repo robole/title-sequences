@@ -1,0 +1,90 @@
+/*
+Click unmute button for accompanying audio.
+
+Source Code:
+https://github.com/robole/title-sequences
+*/
+
+:root {
+  --animation-timing: 4s;
+  --text-color: rgb(255, 255, 255);
+  --background-color: red;
+  --transition-timing: 0.4s;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  transition: background-color var(--transition-timing);
+}
+
+body {
+  perspective: 1100px;
+}
+
+#titleSvg {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+#bg {
+  fill: var(--background-color);
+  transition: fill var(--transition-timing);
+}
+
+.title {
+  fill: var(--text-color);
+  transition: fill var(--transition-timing);
+}
+
+.drip {
+  fill: var(--background-color);
+  opacity: 0;
+}
+
+#drip4 {
+  fill: var(--text-color);
+}
+
+label {
+  position: fixed;
+  border-radius: 50%;
+  background-color: white;
+  top: calc(0.25rem + 1vw);
+  right: calc(0.25rem + 1vw);
+  height: calc(1.25rem + 2vw);
+  width: calc(1.25rem + 2vw);
+  cursor: pointer;
+}
+
+label > svg {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  left: 5%;
+}
+
+label path {
+  fill: black;
+}
+
+label .mute-off {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+:checked ~ label .mute-off {
+  display: block;
+}
+
+:checked ~ label .mute-on {
+  display: none;
+}
