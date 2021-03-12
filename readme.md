@@ -2,6 +2,12 @@
 
 Recreating title sequences from TV Shows and Movies.
 
+## Ozark
+
+![screenshot Ozark title](ozark/img/screenshot.gif)
+
+See [live demo](https://codepen.io/robjoeol/full/yLVZbwQ).
+
 ## Schitts Creek
 
 ![screenshot schitts creek](schitts-creek/img/screenshot.gif)

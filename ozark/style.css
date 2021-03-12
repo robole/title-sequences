@@ -1,0 +1,29 @@
+/*
+  Click image to restart animation.
+
+	Part of Title Sequences collection:
+	https://codepen.io/collection/nNmwgP
+*/
+
+:root {
+  --symbol-animation-duration: 1.5s;
+  --symbol-animation-start: 4s;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#o-letter,
+.line,
+.symbol {
+  opacity: 0;
+}
