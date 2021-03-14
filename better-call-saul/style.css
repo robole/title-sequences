@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --width: calc(100% - 10px);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+#title-container {
+  position: relative;
+  overflow: hidden;
+  width: var(--width);
+  margin: 10px 5px;
+  filter: blur(10px);
+}
+
+#background {
+  width: 100%;
+}
+
+#animatable-background,
+#title,
+#color-card,
+#credits-sequence {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#animatable-background {
+  opacity: 0.5;
+}
+
+#title {
+  opacity: 0;
+  filter: blur(1px);
+}
+
+#color-card,
+#credits-sequence {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  #title-container {
+    width: 1000px;
+    margin: 5px auto;
+  }
+}

@@ -1,6 +1,6 @@
 # Ozark
 
-Title sequence for the TV Series [Ozark](https://www.netflix.com/my-en/title/80117552).
+Title sequence for the TV Series [Ozark](https://www.netflix.com/my-en/title/80117552). This instance is based on Season 1 Episode 1.
 
 ![screenshot](img/screenshot.gif)
 

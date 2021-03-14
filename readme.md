@@ -8,6 +8,12 @@ Recreating title sequences from TV Shows and Movies.
 
 See [live demo](https://codepen.io/robjoeol/full/yLVZbwQ).
 
+## Better Call Saul
+
+![screenshot Better Call Saul title](better-call-saul/img/screenshot.gif)
+
+See [live demo](https://codepen.io/robjoeol/full/rNWRoBO).
+
 ## Schitts Creek
 
 ![screenshot schitts creek](schitts-creek/img/screenshot.gif)
