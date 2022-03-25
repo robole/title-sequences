@@ -17,7 +17,9 @@ npm run dev
 
 The website is run on: <http://localhost:3000/>.
 
-If you open the project in VS Code, there is a task that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable it. Otherwise you can run the command `npm run dev` to start the dev server yourself.
+If you open the project in VS Code, there is a task that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable it.
+
+Otherwise, you can run the command `npm run dev` to start the dev server yourself, once you have installed the dependecies.
 
 ## Title sequences
 
@@ -58,5 +60,7 @@ View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
 [Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series, produced in the United Kingdom for BBC America and BBC Three. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
 
 ![screenshot Killing Eve title](killing-eve/img/demo.gif)
+
+I discuss how I created this in the article, [How to create slick TV show title sequences](https://www.roboleary.net/2020/12/24/title-sequences.html).
 
 View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
