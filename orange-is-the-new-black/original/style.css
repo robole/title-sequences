@@ -20,7 +20,7 @@ https://github.com/robole/title-sequences
 
   body {
     /* background-image: url(img/bg-large.jpg); */
-    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg);
+    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg");
   }
 
   main {
@@ -31,7 +31,7 @@ https://github.com/robole/title-sequences
 @media (min-width: 481px) and (max-width: 959px) {
   body {
     /* background-image: url(img/bg-med.jpg); */
-    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg);
+    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg");
   }
 
   main {
@@ -50,22 +50,22 @@ https://github.com/robole/title-sequences
 
   body {
     /* background-image: url(img/bg-small.jpg); */
-    background-image: url(https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg);
+    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg");
   }
 }
 
 body {
+  height: 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 main {
-  width: 100%;
   display: grid;
-  grid-template-rows: 1fr;
-  justify-content: start;
+  width: 100%;
   align-items: center;
+  justify-content: start;
+  grid-template-rows: 1fr;
 }
 
 svg {
@@ -107,19 +107,19 @@ label {
   position: fixed;
   top: 0.75rem;
   right: 0.75rem;
-  height: calc(1.5rem + 2vw);
   width: calc(1.5rem + 2vw);
-  cursor: pointer;
-  border-radius: 50%;
+  height: calc(1.5rem + 2vw);
   background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 label > svg {
   position: absolute;
-  height: 80%;
-  width: 80%;
   top: 10%;
   right: 10%;
+  width: 80%;
+  height: 80%;
 }
 
 label path {
@@ -132,8 +132,8 @@ label .mute-off {
 
 input[type="checkbox"] {
   display: none;
-  height: 0;
   width: 0;
+  height: 0;
 }
 
 :checked ~ label .mute-off {
