@@ -1,5 +1,7 @@
 # Killing Eve
 
+[Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series, produced in the United Kingdom for BBC America and BBC Three. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
+
 This is a reference of what I want to replicate.
 
 ![reference screenshot of title](img/reference.gif)
@@ -13,6 +15,8 @@ For each episode, the title varies in the following ways:
 - The accompanying song. The music selection is exemplary.
 
 What I want to do is create a similar montage to the video, but make it random. The colors, the oozing blood trail character, and the song will be chosen at random each time.
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ## Design Decisions
 

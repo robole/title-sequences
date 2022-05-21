@@ -1,8 +1,12 @@
 # Orange is the New Black
 
+[Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series created by Jenji Kohan for Netflix. The series is based on [Piper Kerman's memoir Orange Is the New Black: My Year in a Women's Prison (2010)](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black:_My_Year_in_a_Women%27s_Prison), about her experiences at FCI Danbury, a minimum-security federal prison.
+
 I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
 
 ![screenshot Orange Is The New Black](original/img/screenshot.gif)
+
+The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
 
 See [live demo](https://codepen.io/robjoeol/full/VwKLPRR).
 

@@ -33,7 +33,7 @@ View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
 
 ### Better Call Saul
 
-[Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series created by Vince Gilligan and Peter Gould.
+[Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series. It is a spin-off, prequel, and a sequel to [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad). Set primarily in the early to middle part of the 2000s in Albuquerque, New Mexico, the series follows Jimmy McGill (Bob Odenkirk), an earnest lawyer and former con artist, as he becomes an egocentric criminal defense attorney known as Saul Goodman.
 
 ![screenshot Better Call Saul title](better-call-saul/img/screenshot.gif)
 

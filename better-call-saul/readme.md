@@ -6,6 +6,8 @@ Title sequence for the TV Series [Better Call Saul](https://www.amc.com/shows/be
 
 You can watch [this video to see a montage of the title sequences for season 1](https://www.youtube.com/watch?v=ybobdx-H_Jc).
 
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+
 ## Typography
 
 Two typefaces are used for the title of the TV series. The text “Better Call” uses [_Script1 Script Casual_](https://fontmeme.com/fonts/script1-script-casual-font/) in italics. The text “Saul” uses a cursive font that is very similar to [_Dancing Script_](https://fonts.google.com/specimen/Dancing+Script?preview.text_type=custom).
