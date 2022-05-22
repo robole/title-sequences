@@ -96,7 +96,7 @@ I took the final sequence in the [opening title](https://www.youtube.com/watch?v
 
 The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
 
-![screenshot Orange Is The New Black](orange-is-the-new-black/original/img/screenshot.gif)
+![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.gif)
 
 View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
 
@@ -142,23 +142,20 @@ The audio is the property of the copyright holders. Samples are used here as a c
 
 ### The Marvelous Mrs Maisel
 
-#### Design decisions
+[The Marvelous Mrs. Maisel](https://en.wikipedia.org/wiki/The_Marvelous_Mrs._Maisel) is an American period comedy-drama television series. It is set in the late 1950s and early 1960s, it stars Rachel Brosnahan as Miriam "Midge" Maisel, a New York housewife who discovers she has a knack for stand-up comedy and pursues a career in it.
 
-The closest typeface is [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/).
+I took the [second title sequence from the montage of season 4 titles](https://www.youtube.com/watch?v=gq-zPalK8H4).
 
-First, I created a landscape SVG (1200x800) in Inkscape.
+<img
+	src="the-marvelous-mrs-maisel/img/demo.gif"
+	alt="demo of The Marvelous Mrs. Maisel sequence"
+	width="600"
+	height="401"
+	loading="lazy"
+/>
 
-I want to create a `text` element for each word in the title. On inscpetion, it looks like the words "the" and "mrs." are the same size, the word "Marvelous" is about 30% bigger, then the word "Maisel" is about 20% bigger again.
+View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
-I settled at the following for the words:
-- 60px for "the" and "mrs."
-- 100px for "Marvelous"
-- 140px for "Maisel".
+#### Attribution
 
-This is what it looks like:
-
-Next, I want to add the 2 sparkles.
-
-It looks easiest to create it in 2 parts because of the thickness of the arms. Create the thinner X shape first. I used the star shape tool with 4 corners, and played with the spoker ratio to get the right thickness.
-
-Then, repeat for the cross shape. It needs a bigger size and differnt spoke ratio. Next, I need to turn it into a path
+[Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/) is free for personal use.

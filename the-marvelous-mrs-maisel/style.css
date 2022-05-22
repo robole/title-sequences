@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Fontdinerdotcom;
+  src: url("fonts/Fontdinerdotcom.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fontdinerdotcom Sparkly";
+  src: url("fonts/FontdinerdotcomSparkly.woff") format("woff");
+}
+
+body {
+  display: grid;
+  justify-content: center;
+}
+
+text {
+  fill: papayawhip;
+  mix-blend-mode: difference;
+}
+
+svg {
+  width: 100%;
+  max-width: 800px;
+}
