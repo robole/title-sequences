@@ -38,15 +38,15 @@ So far, these are the title sequences:
 
 This instance is based on Season 1 Episode 1.
 
-You can watch [this video to see a montage of the title sequences for season 1](https://www.youtube.com/watch?v=DJQxWhRIQE0).
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
-
-I discuss everything in more detail in [this article](https://www.roboleary.net/2022/01/22/ozark-animation.html).
-
 ![screenshot Ozark title](ozark/img/screenshot.gif)
 
 View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
+
+#### How was this made?
+
+I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html).
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Better Call Saul
 
@@ -116,19 +116,13 @@ View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
 
 ![screenshot Killing Eve title](killing-eve/img/demo.gif)
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
-
-I discuss how I created this in [this article](https://www.roboleary.net/2020/12/24/title-sequences.html).
-
 View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
-#### What I learned
+#### How was this made?
 
-I learned a bit more about [GSAP](https://greensock.com/gsap/):
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
-- You can have simultaneous tweens execute on the same timeline by using a label or specifying a time variable. Prior to that, I was creating separate timelines.
-- You can't repeat an animation if you want to use a random function to change the selector for a tween each time it repeats. The best solution I found is to wrap the call to the random function and the associated timeline in a `setInterval` call. You can check the code to see what I did!
-- If you want to randomise a tween value, you can use built-in random functions.
+I discuss it all in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html).
 
 #### Attribution
 
@@ -144,7 +138,7 @@ The audio is the property of the copyright holders. Samples are used here as a c
 
 [The Marvelous Mrs. Maisel](https://en.wikipedia.org/wiki/The_Marvelous_Mrs._Maisel) is an American period comedy-drama television series. It is set in the late 1950s and early 1960s, it stars Rachel Brosnahan as Miriam "Midge" Maisel, a New York housewife who discovers she has a knack for stand-up comedy and pursues a career in it.
 
-The opening title is a static title card in first 3 seasons, however in Season 4 an unique, dynamic title sequence was created for each episode. I made the title sequence from Episode 2, Season 4 (as below). This is the [second title sequence in this video montage of season 4 titles (youtube)](https://www.youtube.com/watch?v=gq-zPalK8H4) if you want to compare them side-by-side.
+This instance is the opening title from Episode 2 of Season 4
 
 It is a pure CSS animation.
 
