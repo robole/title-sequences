@@ -108,7 +108,7 @@ View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
 #### Attribution
 
 - [Photo](https://unsplash.com/photos/WWX2bPqP-z4) by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- [Door closing sound effect](https://freesound.org/people/TurtleLG/sounds/80449/).
+- [Door closing sound effect](https://freesound.org/people/TurtleLG/sounds/80449/) from Freesound.org.
 
 ### Killing Eve
 
@@ -144,7 +144,9 @@ The audio is the property of the copyright holders. Samples are used here as a c
 
 [The Marvelous Mrs. Maisel](https://en.wikipedia.org/wiki/The_Marvelous_Mrs._Maisel) is an American period comedy-drama television series. It is set in the late 1950s and early 1960s, it stars Rachel Brosnahan as Miriam "Midge" Maisel, a New York housewife who discovers she has a knack for stand-up comedy and pursues a career in it.
 
-I took the [second title sequence from the montage of season 4 titles](https://www.youtube.com/watch?v=gq-zPalK8H4).
+The opening title is a static title card in first 3 seasons, however in Season 4 an unique, dynamic title sequence was created for each episode. I made the title sequence from Episode 2, Season 4 (as below). This is the [second title sequence in this video montage of season 4 titles (youtube)](https://www.youtube.com/watch?v=gq-zPalK8H4) if you want to compare them side-by-side.
+
+It is a pure CSS animation.
 
 <img
 	src="the-marvelous-mrs-maisel/img/demo.gif"
@@ -158,4 +160,4 @@ View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
 #### Attribution
 
-[Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/) is free for personal use.
+I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/). This is free for personal use only.

@@ -9,7 +9,7 @@
 }
 
 :root {
-  --stagger: 0.3s;
+  --delay: 0.3s;
 }
 
 body {
@@ -17,17 +17,34 @@ body {
   justify-content: center;
 }
 
-text {
-  fill: papayawhip;
-  mix-blend-mode: difference;
-}
-
 svg {
   width: 100%;
   max-width: 800px;
 }
 
-@keyframes slide {
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+text {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: scale-up;
+  animation-timing-function: ease-out;
+
+  fill: papayawhip;
+  mix-blend-mode: difference;
+
+  transform-origin: center center;
+}
+
+@keyframes slide-out {
   to {
     transform: translateX(-1200px);
   }
@@ -36,25 +53,25 @@ svg {
 .bg {
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  animation-name: slide;
+  animation-name: slide-out;
 }
 
 .bg:nth-of-type(2) {
-  animation-delay: var(--stagger);
+  animation-delay: var(--delay);
 }
 
 .bg:nth-of-type(3) {
-  animation-delay: calc(var(--stagger) * 2);
+  animation-delay: calc(var(--delay) * 2);
 }
 
 .bg:nth-of-type(4) {
-  animation-delay: calc(var(--stagger) * 3);
+  animation-delay: calc(var(--delay) * 3);
 }
 
 .bg:nth-of-type(5) {
-  animation-delay: calc(var(--stagger) * 4);
+  animation-delay: calc(var(--delay) * 4);
 }
 
 .bg:nth-of-type(6) {
-  animation-delay: calc(var(--stagger) * 5);
+  animation-delay: calc(var(--delay) * 5);
 }
