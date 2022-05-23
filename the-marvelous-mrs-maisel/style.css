@@ -8,6 +8,10 @@
   src: url("fonts/FontdinerdotcomSparkly.woff") format("woff");
 }
 
+:root {
+  --stagger: 0.3s;
+}
+
 body {
   display: grid;
   justify-content: center;
@@ -21,4 +25,36 @@ text {
 svg {
   width: 100%;
   max-width: 800px;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-1200px);
+  }
+}
+
+.bg {
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-name: slide;
+}
+
+.bg:nth-of-type(2) {
+  animation-delay: var(--stagger);
+}
+
+.bg:nth-of-type(3) {
+  animation-delay: calc(var(--stagger) * 2);
+}
+
+.bg:nth-of-type(4) {
+  animation-delay: calc(var(--stagger) * 3);
+}
+
+.bg:nth-of-type(5) {
+  animation-delay: calc(var(--stagger) * 4);
+}
+
+.bg:nth-of-type(6) {
+  animation-delay: calc(var(--stagger) * 5);
 }
