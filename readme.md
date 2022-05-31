@@ -169,7 +169,7 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 ### Upload
 
-[Upload](https://en.wikipedia.org/wiki/Upload_(TV_series)) is an American science fiction comedy-drama television series created by Greg Daniels. In 2033, humans can "upload" themselves into a virtual afterlife of their choosing. When computer programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+[Upload](https://en.wikipedia.org/wiki/Upload_(TV_series)) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
 
 <img src="upload/img/demo.gif"
 	alt="demo of Upload title sequence"

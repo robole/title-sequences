@@ -1,5 +1,10 @@
 /* stylelint-disable property-no-vendor-prefix */
 
+@font-face {
+  font-family: "Paytone One";
+  src: url("fonts/PaytoneOne-Regular.woff") format("woff");
+}
+
 :root {
   --glitch-delay: 3s;
 }
@@ -143,7 +148,7 @@ svg {
   }
 }
 
-#static {
+#beam {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
