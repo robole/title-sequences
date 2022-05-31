@@ -31,6 +31,7 @@ So far, these are the title sequences:
 1. [Orange is The New Black](#orange-is-the-new-black)
 1. [Killing Eve](#killing-eve)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
+1. [Upload](#upload)
 
 ### Ozark
 
@@ -44,15 +45,13 @@ View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
 
 #### How was this made?
 
-I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html).
+I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html)!
 
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Better Call Saul
 
 [Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series. It is a spin-off, prequel, and a sequel to [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad). Set primarily in the early to middle part of the 2000s in Albuquerque, New Mexico, the series follows Jimmy McGill (Bob Odenkirk), an earnest lawyer and former con artist, as he becomes an egocentric criminal defense attorney known as Saul Goodman.
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ![screenshot Better Call Saul title](better-call-saul/img/screenshot.gif)
 
@@ -63,6 +62,10 @@ View the [codepen](https://codepen.io/robjoeol/full/rNWRoBO).
 Two typefaces are used for the title of the TV series. The text “Better Call” uses [_Script1 Script Casual_](https://fontmeme.com/fonts/script1-script-casual-font/) in italics. The text “Saul” uses a cursive font that is very similar to [_Dancing Script_](https://fonts.google.com/specimen/Dancing+Script?preview.text_type=custom).
 
 The credits use [VCR OSD Mono](https://www.dafont.com/vcr-osd-mono.font).
+
+#### How was this made?
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 #### Optimizing animation
 
@@ -77,8 +80,6 @@ The animation could be optimized further. The following could be done:
 
 I took the final sequence in the [opening title](https://www.youtube.com/watch?v=xhRpLYYfgy0).
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. The [CSSRulePlugin](https://greensock.com/cssruleplugin/) was also required to animate pseudo-elements for the sparkle effect.
-
 ![screenshot schitts creek](schitts-creek/img/screenshot.gif)
 
 View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
@@ -88,17 +89,23 @@ View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 - The original typeface used is [Linotype Didot](https://www.myfonts.com/fonts/linotype/didot/). I found a suitable alternative in [Playfair Display](https://fonts.google.com/specimen/Playfair+Display).
 - I simplified the sparkle above the S glyph. It uses 2 diagonal beams, but it happens so fast, it makes little difference. The original is more intricate (as below).
 
+#### How was this made?
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. The [CSSRulePlugin](https://greensock.com/cssruleplugin/) was also required to animate pseudo-elements for the sparkle effect.
+
 ### Orange Is The New Black
 
 [Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series created by Jenji Kohan for Netflix. The series is based on [Piper Kerman's memoir Orange Is the New Black: My Year in a Women's Prison (2010)](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black:_My_Year_in_a_Women%27s_Prison), about her experiences at FCI Danbury, a minimum-security federal prison.
 
 I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
 
-The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
-
 ![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.gif)
 
 View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
+
+#### How was this made?
+
+The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
 
 #### Design decisions
 
@@ -120,9 +127,9 @@ View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
 #### How was this made?
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+I explain it in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html)!
 
-I discuss it all in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html).
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 #### Attribution
 
@@ -140,8 +147,6 @@ The audio is the property of the copyright holders. Samples are used here as a c
 
 This instance is the opening title from Episode 2 of Season 4
 
-It is a pure CSS animation.
-
 <img
 	src="the-marvelous-mrs-maisel/img/demo.gif"
 	alt="demo of The Marvelous Mrs. Maisel sequence"
@@ -152,6 +157,29 @@ It is a pure CSS animation.
 
 View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
+#### How was this made?
+
+I explain it in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html)!
+
+It is a pure CSS animation.
+
 #### Attribution
 
 I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/). This is free for personal use only.
+
+### Upload
+
+[Upload](https://en.wikipedia.org/wiki/Upload_(TV_series)) is an American science fiction comedy-drama television series created by Greg Daniels. In 2033, humans can "upload" themselves into a virtual afterlife of their choosing. When computer programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+
+<img src="upload/img/demo.gif"
+	alt="demo of Upload title sequence"
+	width="600"
+	height="401"
+	loading="lazy"
+/>
+
+View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
+
+#### How was this made?
+
+It is a pure CSS animation.

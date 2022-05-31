@@ -1,6 +1,5 @@
 # Todo
 
-1. Upload needs to be improved.
 1. Pick something from [The Queens Gambit interview](https://www.artofthetitle.com/title/the-queens-gambit/)
 1. Stranger Things -> [this video](https://www.youtube.com/watch?v=-RcPZdihrp4).
 
@@ -13,6 +12,6 @@
    - [Split text](https://codemyui.com/black-mirror-style-cracked-glitchy-text-effect/)
    - Difficulty: hard.
 1. Pick some sequences from [Catch Me If You Can](https://www.youtube.com/watch?v=aN715Rp4L74)
-1. Marvelous Mrs. Maisel <https://www.youtube.com/watch?v=gq-zPalK8H4>
+1. More Marvelous Mrs. Maisel <https://www.youtube.com/watch?v=gq-zPalK8H4> ?
 
 Can find more [here](https://www.youtube.com/channel/UCcpJUN2rzYQmS5oOXzy3zlw)
