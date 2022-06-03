@@ -127,13 +127,13 @@ View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
 #### How was this made?
 
-I explain it in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html)!
-
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+
+I explain how in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html)!
 
 #### Attribution
 
-The is audio is sampled from:
+The audio is sampled from:
 
 1. Xpectation by Unloved.
 1. Voodoo Voodoo by Etienne Daho.
@@ -159,9 +159,9 @@ View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
 #### How was this made?
 
-I explain it in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html)!
-
 It is a pure CSS animation.
+
+I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html)!
 
 #### Attribution
 
@@ -183,3 +183,5 @@ View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 #### How was this made?
 
 It is a pure CSS animation.
+
+I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!

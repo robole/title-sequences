@@ -1,5 +1,4 @@
 /* stylelint-disable property-no-vendor-prefix */
-
 @font-face {
   font-family: "Paytone One";
   src: url("fonts/PaytoneOne-Regular.woff") format("woff");
@@ -48,16 +47,17 @@ svg {
 }
 
 @keyframes grow {
-  from {
-    transform: perspective(300px) translateZ(0);
+  90% {
+    transform: scale(1.2);
   }
 
-  90% {
-    transform: perspective(300px) translateZ(60px);
+  92% {
+    opacity: 1;
   }
 
   to {
-    transform: perspective(300px) translateZ(1000px);
+    opacity: 0;
+    transform: translateX(100px) scale(60);
   }
 }
 
@@ -68,14 +68,10 @@ svg {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  animation-name: upload;
+  animation-name: reveal;
 }
 
-@keyframes upload {
-  0% {
-    transform: translateX(0%);
-  }
-
+@keyframes reveal {
   3% {
     transform: translateX(30%);
   }
@@ -102,49 +98,6 @@ svg {
 
   to {
     transform: translateX(100%);
-  }
-}
-
-.glitches {
-  animation-duration: 0.1s;
-  animation-name: show-glitch;
-}
-
-.glitches:nth-of-type(1) {
-  animation-delay: var(--glitch-delay);
-}
-
-.glitches:nth-of-type(2) {
-  animation-delay: calc(var(--glitch-delay) + 0.025s);
-}
-
-.glitches:nth-of-type(3) {
-  animation-delay: calc(var(--glitch-delay) + 0.05s);
-}
-
-.glitches:nth-of-type(4) {
-  animation-delay: calc(var(--glitch-delay) + 0.075s);
-}
-
-.glitches:nth-of-type(5) {
-  animation-delay: calc(var(--glitch-delay) + 0.01s);
-}
-
-@keyframes show-glitch {
-  0% {
-    opacity: 0.75;
-  }
-
-  40% {
-    transform: translate(0, -3px);
-  }
-
-  80% {
-    transform: translate(-20px, 0);
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
@@ -186,5 +139,48 @@ svg {
 
   to {
     transform: translateX(102%);
+  }
+}
+
+.glitches {
+  animation-duration: 0.1s;
+  animation-name: glitch;
+}
+
+.glitches:nth-of-type(1) {
+  animation-delay: var(--glitch-delay);
+}
+
+.glitches:nth-of-type(2) {
+  animation-delay: calc(var(--glitch-delay) + 0.025s);
+}
+
+.glitches:nth-of-type(3) {
+  animation-delay: calc(var(--glitch-delay) + 0.05s);
+}
+
+.glitches:nth-of-type(4) {
+  animation-delay: calc(var(--glitch-delay) + 0.075s);
+}
+
+.glitches:nth-of-type(5) {
+  animation-delay: calc(var(--glitch-delay) + 0.01s);
+}
+
+@keyframes glitch {
+  0% {
+    opacity: 0.75;
+  }
+
+  40% {
+    transform: translate(0, -3px);
+  }
+
+  80% {
+    transform: translate(-20px, 0);
+  }
+
+  100% {
+    opacity: 0;
   }
 }
