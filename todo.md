@@ -1,12 +1,6 @@
 # Todo
 
 1. Pick something from [The Queens Gambit interview](https://www.artofthetitle.com/title/the-queens-gambit/)
-1. Stranger Things -> [this video](https://www.youtube.com/watch?v=-RcPZdihrp4).
-
-- The [making video](https://www.youtube.com/watch?v=_a1lp_ygGB4).
-- ITC Benguiat Typeface.
-- Difficulty: Easy (Just the shuffle and reveal). Other parts more time-consuming.
-
 1. Black Mirror -> [this video](https://www.youtube.com/watch?v=pxjy1vahZnU)
    - [Spinner codepen](https://codepen.io/mr21/pen/QWyKpYR)
    - [Split text](https://codemyui.com/black-mirror-style-cracked-glitchy-text-effect/)
