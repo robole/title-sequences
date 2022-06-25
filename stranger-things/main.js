@@ -21,11 +21,9 @@ tl.addLabel("start", 0)
   .addLabel("vertical-placement", 7)
   .addLabel("big-letter", 11)
   .addLabel("box-reveal", 15)
-  .fromTo(
-    "#title",
-    { scale: 17 },
-    { duration: 18, scale: 1, ease: "expoScale(17, .6)" }
-  )
+  .fromTo("#title", { scale: 17 }, { duration: 18, scale: 1 })
+  // .to("#title", { z: 0, duration: 18, ease: "none" }, "start")
+
   .to("#word1-a", { x: 0, duration: 6 }, "start")
   .to("#word1-n", { x: 0, duration: 7.5 }, "start")
   .to("#word2-i", { x: 0, duration: 6.5 }, "start+=.5")
@@ -44,4 +42,4 @@ tl.addLabel("start", 0)
     { scaleX: 1, duration: 0.75 },
     "box-reveal+=.75"
   )
-  .to("#title", { opacity: 0, duration: 1.5 }, "box-reveal+=2");
+  .to("#title", { opacity: 0, duration: 1.5 }, "box-reveal+=3");
