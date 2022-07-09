@@ -13,15 +13,15 @@ tl.set("#word1-t, #word1-e", { y: -180 });
 tl.set("#word2-h, #word2-s", { y: 180 });
 
 tl.set("#top-box", { scaleX: 0, transformOrigin: "50% 50%" });
-tl.set("#bottom-left-box", { scaleX: 0, transformOrigin: "100% 0%" });
-tl.set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 100%" });
-tl.set("#title", { opacity: 1 });
+tl.set("#bottom-left-box", { scaleX: 0, transformOrigin: "50% 0%" });
+tl.set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" });
+tl.set("#title", { opacity: 1, transformOrigin: "50% 50%", scale: 17 });
 
 tl.addLabel("start", 0)
   .addLabel("vertical-placement", 7)
   .addLabel("big-letter", 11)
   .addLabel("box-reveal", 15)
-  .fromTo("#title", { scale: 17 }, { duration: 18, scale: 1 })
+  .to("#title", { duration: 18, scale: 1, ease: ExpoScaleEase.config(17, 1) })
   // .to("#title", { z: 0, duration: 18, ease: "none" }, "start")
 
   .to("#word1-a", { x: 0, duration: 6 }, "start")
