@@ -1,6 +1,5 @@
 body {
   overflow: hidden;
-  background-color: black;
 }
 
 svg {
@@ -8,14 +7,3 @@ svg {
   width: 800px;
   margin: 0 auto;
 }
-
-/* #word1-t,
-#word1-e,
-#word2-h,
-#word2-s {
-  will-change: transform;
-} */
-
-/* path {
-  filter: drop-shadow(1px 0 4px rgb(141 47 42 / 62.3%));
-} */

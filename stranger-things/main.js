@@ -1,45 +1,86 @@
-let tl = gsap.timeline();
+let lettersTimeline = gsap.timeline();
 
-tl.set("#word1-a", { x: -20 });
-tl.set("#word1-n", { x: 20 });
-tl.set("#word1-r1", { x: -50 });
-tl.set("#word1-g, #word2-g", { x: 50 });
-tl.set("#word1-s", { x: -150 });
-tl.set("#word1-r2", { x: 150 });
-tl.set("#word2-i", { x: -200 });
-tl.set("#word2-n", { y: 150 });
+lettersTimeline.set("#title", { transformOrigin: "48% 70%", scale: 4.9 });
 
-tl.set("#word1-t, #word1-e", { y: -180 });
-tl.set("#word2-h, #word2-s", { y: 180 });
+let batch1Distance = 30;
+let batch3Distance = 50;
+let batch6and8Distance = 180;
+let batch9and10Distance = 150;
 
-tl.set("#top-box", { scaleX: 0, transformOrigin: "50% 50%" });
-tl.set("#bottom-left-box", { scaleX: 0, transformOrigin: "50% 0%" });
-tl.set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" });
-tl.set("#title", { opacity: 1, transformOrigin: "50% 50%", scale: 17 });
+// first word: STRANGER
+lettersTimeline.set("#word1-s", { x: `-${batch9and10Distance}` });
+lettersTimeline.set("#word1-t", { y: `-${batch6and8Distance}` });
+lettersTimeline.set("#word1-r1", { x: -60 });
+lettersTimeline.set("#word1-a", { x: `-${batch1Distance}` });
+lettersTimeline.set("#word1-n", { x: `${batch1Distance}` });
+lettersTimeline.set("#word1-g", { x: `${batch3Distance}` });
+lettersTimeline.set("#word1-e", { y: -180 });
+lettersTimeline.set("#word1-r2", { x: `${batch9and10Distance}` });
 
-tl.addLabel("start", 0)
-  .addLabel("vertical-placement", 7)
-  .addLabel("big-letter", 11)
-  .addLabel("box-reveal", 15)
-  .to("#title", { duration: 18, scale: 1, ease: ExpoScaleEase.config(17, 1) })
-  // .to("#title", { z: 0, duration: 18, ease: "none" }, "start")
+// second word: THINGS
+// 'T' is static
+lettersTimeline.set("#word2-h", { y: `${batch6and8Distance}` });
+lettersTimeline.set("#word2-i", { x: -130 });
+lettersTimeline.set("#word2-n", { y: 140 });
+lettersTimeline.set("#word2-g", { x: `${batch3Distance}` });
+lettersTimeline.set("#word2-s", { y: 180 });
 
-  .to("#word1-a", { x: 0, duration: 6 }, "start")
-  .to("#word1-n", { x: 0, duration: 7.5 }, "start")
-  .to("#word2-i", { x: 0, duration: 6.5 }, "start+=.5")
-  .to("#word2-n", { y: 0, duration: 5 }, "start+=4")
-  .to("#word1-r1", { x: 0, duration: 6 }, "start+=5")
-  .to("#word1-g, #word2-g", { x: 0, duration: 7.5 }, "start+=5")
-  .to("#word1-t", { y: 0, duration: 8 }, "vertical-placement")
-  .to("#word1-e", { y: 0, duration: 9.5 }, "vertical-placement")
-  .to("#word2-h", { y: 0, duration: 8 }, "vertical-placement")
-  .to("#word2-s", { y: 0, duration: 9.5 }, "vertical-placement")
-  .to("#word1-s", { x: 0, duration: 5 }, "big-letter")
-  .to("#word1-r2", { x: 0, duration: 5 }, "big-letter")
-  .to("#top-box", { scaleX: 1, duration: 1 }, "box-reveal")
+lettersTimeline
+  .addLabel("start", 0)
+  .addLabel("batch2", 0.2)
+  .addLabel("batch3", 1)
+  .addLabel("batch4", 4)
+  .addLabel("batch5", 5)
+  .addLabel("batch6", 9)
+  .addLabel("batch7", 9.5)
+  .addLabel("batch8", 10)
+  .addLabel("batch9", 11)
+  .addLabel("batch10", 12.75)
+
   .to(
-    "#bottom-left-box, #bottom-right-box",
-    { scaleX: 1, duration: 0.75 },
-    "box-reveal+=.75"
+    "#title",
+    {
+      duration: 20,
+      scale: 1,
+      ease: ExpoScaleEase.config(4.9, 1),
+    },
+    "start"
   )
-  .to("#title", { opacity: 0, duration: 1.5 }, "box-reveal+=3");
+  .to("#word1-a, #word1-n", { x: 0, duration: 6 }, "start")
+  .to("#word2-i", { x: 0, duration: 9 }, "batch2")
+  .to("#word1-g, #word2-g", { x: 0, duration: 11 }, "batch3")
+  .to("#word1-r1", { x: 0, duration: 6 }, "batch4")
+  .to("#word2-n", { y: 0, duration: 5 }, "batch5")
+  .to("#word1-t", { y: 0, duration: 6 }, "batch6")
+  .to("#word2-h", { y: 0, duration: 4.5 }, "batch7")
+  .to("#word1-e, #word2-s", { y: 0, duration: 7 }, "batch8")
+  .to("#word1-r2", { x: 0, duration: 6 }, "batch9")
+  .to("#word1-s", { x: 0, duration: 4.25 }, "batch10");
+
+// let boxesTimeline = gsap.timeline();
+
+// boxesTimeline
+//   .set("#top-box", { scaleX: 0, transformOrigin: "50% 50%" })
+//   .set("#bottom-left-box", { scaleX: 0, transformOrigin: "100% 50%" })
+//   .set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" });
+
+// // in the complete animation, this happens after a delay of 14 seconds
+// boxesTimeline
+//   .to("#top-box", { scaleX: 1, duration: 1, delay: 14 })
+//   .to(
+//     "#bottom-left-box, #bottom-right-box",
+//     { scaleX: 1, duration: 0.75 },
+//     "+=.75"
+//   );
+
+// let visibilityTimeline = gsap.timeline({ delay: 19 });
+
+// visibilityTimeline.set("#spotReveal ellipse", {
+//   transformOrigin: "50% 50%",
+// });
+
+// visibilityTimeline.to("#spotReveal ellipse", {
+//   scale: 0.6,
+//   opacity: 0,
+//   duration: 2,
+// });
