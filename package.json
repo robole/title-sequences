@@ -5,19 +5,22 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "npx eslint . test",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "npx prettier . --check",
+    "prettier": "prettier . --check",
     "prettier:fix": "npm run prettier -- --write",
     "format": "npm run prettier:fix && npm:run lint:fix"
   },
   "devDependencies": {
     "eslint": "^8.11.0",
     "eslint-config-roboleary": "^0.3.0",
-    "gsap": "^3.9.1",
+    "eslint-plugin-import": "^2.25.2",
     "prettier": "^2.6.1",
     "stylelint": "^14.6.1",
     "stylelint-config-roboleary": "^0.4.1",
     "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4"
   }
 }

@@ -2,11 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "npm",
-      "script": "dev",
-      "problemMatcher": [],
-      "label": "npm: dev",
-      "detail": "vite",
+      "label": "Run dev server",
+      "type": "shell",
+      "command": "npx vite",
       "runOptions": {
         "runOn": "folderOpen"
       }

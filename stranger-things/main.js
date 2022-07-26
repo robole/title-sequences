@@ -1,3 +1,8 @@
+import gsap from "gsap";
+import { EasePack } from "gsap/EasePack";
+
+gsap.registerPlugin(EasePack);
+
 function part1() {
   let scaleTimeline = gsap.timeline();
 
@@ -6,7 +11,7 @@ function part1() {
   scaleTimeline.to("#title", {
     duration: 20,
     scale: 0.8,
-    ease: ExpoScaleEase.config(4.9, 0.8),
+    ease: EasePack.ExpoScaleEase.config(4.9, 0.8),
   });
 
   return scaleTimeline;
