@@ -4,6 +4,47 @@ body {
 
 svg {
   display: block;
-  width: 800px;
-  margin: 0 auto;
+}
+
+/* volume */
+
+label {
+  position: fixed;
+  top: calc(0.25rem + 1vw);
+  right: calc(0.25rem + 1vw);
+  width: calc(1.25rem + 2vw);
+  height: calc(1.25rem + 2vw);
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+label > svg {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+label path {
+  fill: black;
+}
+
+label .mute-off {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+:checked ~ label .mute-off {
+  display: block;
+}
+
+:checked ~ label .mute-on {
+  display: none;
 }

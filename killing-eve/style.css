@@ -7,7 +7,7 @@ https://github.com/robole/title-sequences
 
 :root {
   --animation-timing: 4s;
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(255 255 255);
   --background-color: red;
   --transition-timing: 0.4s;
 }
@@ -25,8 +25,8 @@ body {
 #titleSvg {
   display: block;
   width: 100%;
-  margin: 0 auto;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 #bg {
@@ -50,21 +50,21 @@ body {
 
 label {
   position: fixed;
-  border-radius: 50%;
-  background-color: white;
   top: calc(0.25rem + 1vw);
   right: calc(0.25rem + 1vw);
-  height: calc(1.25rem + 2vw);
   width: calc(1.25rem + 2vw);
+  height: calc(1.25rem + 2vw);
+  background-color: white;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 label > svg {
   position: absolute;
-  height: 90%;
-  width: 90%;
   top: 5%;
   left: 5%;
+  width: 90%;
+  height: 90%;
 }
 
 label path {
@@ -77,8 +77,8 @@ label .mute-off {
 
 input[type="checkbox"] {
   display: none;
-  height: 0;
   width: 0;
+  height: 0;
 }
 
 :checked ~ label .mute-off {

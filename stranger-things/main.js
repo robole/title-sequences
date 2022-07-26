@@ -3,6 +3,20 @@ import { EasePack } from "gsap/EasePack";
 
 gsap.registerPlugin(EasePack);
 
+let track = new Audio("audio/title.mp3");
+const volume = document.querySelector("input");
+volume.addEventListener("click", toggleMute);
+
+function toggleMute() {
+  track.muted = !track.muted;
+}
+
+function playSong() {
+  track.volume = 0.5;
+  track.muted = true;
+  track.play();
+}
+
 function part1() {
   let scaleTimeline = gsap.timeline();
 
@@ -115,3 +129,5 @@ masterTimeline
   .add(part2(), 0)
   .add(part3(), 15) // at 15 seconds
   .add(part4(), 19);
+
+playSong();
