@@ -203,3 +203,12 @@ View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 It is a pure CSS animation.
 
 I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!
+
+## Stranger Things
+
+Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers.
+
+Stranger Things is set in the 1980s in the fictional town of Hawkins,
+Indiana. The story centers on a number of mysteries and supernatural
+events occurring around the town and their impact on an ensemble of
+child and adult characters.

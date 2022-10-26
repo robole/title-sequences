@@ -3,18 +3,18 @@ import { EasePack } from "gsap/EasePack";
 
 gsap.registerPlugin(EasePack);
 
-let track = new Audio("audio/title.mp3");
-const volume = document.querySelector("input");
+let song = new Audio("audio/title.mp3");
+const volume = document.querySelector("input[type='checkbox']");
 volume.addEventListener("click", toggleMute);
 
 function toggleMute() {
-  track.muted = !track.muted;
+  song.muted = !song.muted;
 }
 
 function playSong() {
-  track.volume = 0.5;
-  track.muted = true;
-  track.play();
+  song.volume = 0.5;
+  song.muted = true;
+  song.play();
 }
 
 function part1() {
@@ -116,7 +116,11 @@ function part4() {
   return visibilityTimeline;
 }
 
-const masterTimeline = gsap.timeline();
+const masterTimeline = gsap.timeline({
+  onStart: () => {
+    playSong();
+  },
+});
 
 // since we want this to be set at the very start
 masterTimeline
@@ -129,5 +133,3 @@ masterTimeline
   .add(part2(), 0)
   .add(part3(), 15) // at 15 seconds
   .add(part4(), 19);
-
-playSong();

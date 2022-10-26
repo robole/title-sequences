@@ -1,19 +1,36 @@
+/*
+Click the unmute button for accompanying audio that skips between tracks featured in the show.
+
+Part of Title Sequences collection:
+https://codepen.io/collection/nNmwgP
+
+Source Code:
+https://github.com/robole/title-sequences
+*/
+
 body {
   overflow: hidden;
 }
 
 svg {
   display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* volume */
+/* volume toggle */
 
 label {
   position: fixed;
-  top: calc(0.25rem + 1vw);
-  right: calc(0.25rem + 1vw);
-  width: calc(1.25rem + 2vw);
-  height: calc(1.25rem + 2vw);
+  top: calc(0.5rem + 1vw);
+  right: clamp(
+    0.5rem,
+    calc(50vw - 400px + 0.5rem),
+    calc(50vw - 400px + 0.5rem)
+  );
+  width: clamp(1rem, calc(1.25rem + 2vw), 2rem);
+  height: clamp(1rem, calc(1.25rem + 2vw), 2rem);
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
