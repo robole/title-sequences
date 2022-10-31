@@ -1,79 +1,95 @@
-let tl1 = new TimelineMax();
+let song = new Audio("audio/intro.mp3");
+song.muted = true;
 
-tl1.to(".word:nth-of-type(1)", {
-  duration: 0.1,
-  opacity: 1,
-});
-tl1.to(".word:nth-of-type(1)", {
-  duration: 1.5,
-  ease: "elastic.out(1, .8).out",
-  rotateX: 0,
-});
+const muteToggle = document.querySelector("input");
+muteToggle.addEventListener("click", toggleMute);
 
-tl1.to(".word:nth-of-type(2)", {
-  duration: 0.1,
-  opacity: 1,
-});
-tl1.to(".word:nth-of-type(2)", {
-  duration: 1.5,
-  ease: "elastic.out(1, .8).out",
-  rotateX: 0,
-});
-
-tl1.to(".bar", {
-  duration: 0.5,
-  scale: 1,
-});
-
-let superscriptBefore = CSSRulePlugin.getRule(".superscript:before");
-tl1.to(superscriptBefore, {
-  duration: 0.3,
-  opacity: 1,
-  delay: 0.3,
-});
-
-let glow = document.getElementById("glow");
-let glowBefore = CSSRulePlugin.getRule("#glow:before");
-let glowAfter = CSSRulePlugin.getRule("#glow:after");
-let glowDelay = 4;
-
-let tl2 = new TimelineMax({ delay: glowDelay });
-
-tl2.to(glow, {
-  duration: 0.1,
-  opacity: 0.5,
-});
-tl2.to(glow, {
-  duration: 0.3,
-  opacity: 0.9,
-  scale: 1,
-});
-tl2.to(glow, {
-  duration: 0.1,
-  opacity: 0,
-});
-
-let tl3 = new TimelineMax({ delay: glowDelay });
-
-tl3.to(glowBefore, {
-  duration: 0.1,
-  opacity: 0.5,
-});
-
-let tl4 = new TimelineMax({ delay: glowDelay });
-
-tl4.to(glowAfter, {
-  duration: 0.1,
-  opacity: 0.5,
-});
-
-let h1 = document.getElementsByTagName("h1")[0];
-
-h1.addEventListener("click", replay);
-
-function replay() {
-  tl1.restart();
-  tl2.restart(glowDelay);
-  tl3.restart(glowDelay);
-  tl4.restart(glowDelay);
+function toggleMute() {
+  song.muted = !song.muted;
 }
+
+let tl = gsap.timeline({
+  onStart: () => {
+    song.currentTime = 0;
+    song.play();
+  },
+});
+
+// part 1 - propping up of words
+gsap.set("h1", {
+  perspective: "500px",
+});
+
+gsap.set(".word", {
+  rotationX: 120,
+  transformOrigin: "50% 100%",
+});
+
+tl.to(".word:nth-of-type(1)", {
+  duration: 0.01,
+  opacity: 1,
+});
+tl.to(".word:nth-of-type(1)", {
+  duration: 1.5,
+  rotationX: 0,
+  ease: "elastic.out(1, .8).out",
+});
+tl.to(".word:nth-of-type(2)", {
+  duration: 0.01,
+  opacity: 1,
+});
+tl.to(".word:nth-of-type(2)", {
+  duration: 1.5,
+  ease: "elastic.out(1, .8).out",
+  rotationX: 0,
+});
+
+// part 2 - extend bars to make dollar sign of superscript S
+tl.to("html", {
+  "--bar-scale-y": 1,
+  duration: 0.5,
+});
+
+// part 3 - sparkle effect
+tl.to(
+  "html",
+  {
+    "--sparkle-scale": 1,
+    duration: 0.25,
+  },
+  "sparkle"
+);
+tl.to("html", {
+  "--sparkle-scale": 0,
+  duration: 0.15,
+});
+tl.to(
+  "html",
+  {
+    "--sparkle-x-position": "4px",
+    "--sparkle-y-position": "1px",
+    "--sparkle-rotation": "8deg",
+    duration: 0.2,
+  },
+  "sparkle+=0.1"
+);
+tl.to(
+  ".superscript",
+  {
+    textShadow: "0 0 8px rgb(247 241 220 / 40%)",
+    duration: 0.2,
+  },
+  "sparkle+=0.1"
+);
+tl.to(
+  ".superscript",
+  {
+    textShadow: "unset",
+    duration: 0.01,
+  },
+  "sparkle+=0.3"
+);
+
+// click title to restart animation
+let h1 = document.getElementsByTagName("h1")[0];
+h1.addEventListener("click", () => tl.restart());

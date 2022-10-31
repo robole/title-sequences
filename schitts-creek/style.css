@@ -1,122 +1,133 @@
 /*
-Click logo to restart animation.
 
-Source Code:
+Click the title to restart animation. Click mute button to hear audio.
 
+Part of Title Sequences collection:
+https://codepen.io/collection/nNmwgP
+
+Source code:
 https://github.com/robole/title-sequences
+
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
 
 :root {
-  --glow-color: rgb(252, 231, 115);
+  --bar-scale-y: 0;
+  --sparkle-color: rgb(253 244 215 / 40%);
+  --sparkle-scale: 0;
+  --sparkle-x-position: 0;
+  --sparkle-y-position: 0;
+  --sparkle-rotation: 0;
 }
+
 body {
-  background-color: black;
   display: grid;
+  height: 100vh;
+
+  background-color: black;
   place-items: center;
 }
 
 h1 {
-  font-family: "Playfair Display", "Vidaloka", serif;
-  font-size: 10rem;
   color: white;
-  perspective: 3000px;
+  font-family: "Playfair Display", Vidaloka, serif;
+  font-size: 8rem;
+
+  line-height: 0.85;
 }
 
 .word {
   display: block;
-  transform: rotateX(100deg);
-  transform-origin: bottom center;
   opacity: 0;
 }
 
 .word:nth-of-type(2) {
+  padding: 0 2rem;
   color: gold;
 }
 
 .superscript {
   position: relative;
-  padding: 0 0.2rem;
-  vertical-align: super;
-  font-size: 7rem;
+  vertical-align: text-top;
 }
 
-.superscript:before {
-  content: "S";
+/* bars */
+.superscript::before {
+  --bar-width: 25%;
+
   position: absolute;
-  top: 21%;
-  left: 0;
-  font-size: 75%;
-  padding: inherit;
-  color: var(--glow-color);
-  vertical-align: super;
-  z-index: -1;
-  opacity: 0;
-  transform: scale(1.05);
-  filter: blur(5px);
-}
 
-.bar {
-  position: absolute;
-  width: 0.125rem;
-  height: 4.5rem;
-  background-color: white;
-  top: 38%;
-  z-index: 3;
-  transform: scale(0);
-}
-
-.bar:nth-of-type(1) {
-  left: 45%;
-}
-
-.bar:nth-of-type(2) {
-  left: 55%;
-}
-
-#glow {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgb(250, 239, 175);
-  opacity: 1;
   top: 37%;
-  left: 42%;
-  opacity: 0;
-  z-index: 5;
-  filter: blur(1px);
-  transform: scale(0.25);
+  left: 47%;
+  width: 14%;
+  height: 48%;
+
+  background: linear-gradient(
+    to right,
+    white var(--bar-width),
+    transparent var(--bar-width) calc(100% - var(--bar-width)),
+    white calc(100% - var(--bar-width))
+  );
+
+  content: "";
+
+  transform: scaleY(var(--bar-scale-y));
 }
 
-#glow:before {
-  border-bottom: 200px solid gold;
-  border-left: 2px solid transparent;
-  border-right: 1px solid transparent;
-  position: absolute;
-  height: 0;
-  width: 0;
-  display: block;
-  content: "";
-  transform: rotate(90deg) translate(-95px, -20px);
-  filter: blur(1px);
-  opacity: 0;
-}
+/* sparkle */
+.superscript::after {
+  --size: 10rem;
 
-#glow:after {
   position: absolute;
-  display: block;
-  color: rgb(55, 0, 255);
-  width: 0px;
-  height: 0px;
-  border-right: 150px solid transparent;
-  border-bottom: 2px solid gold;
-  border-left: 4px solid transparent;
-  transform: rotate(40deg) translate(-30px, 50px);
+
+  top: -5%;
+  left: -85%;
+
+  width: var(--size);
+  height: var(--size);
+
+  background: radial-gradient(
+      circle at center,
+      rgb(252 249 241 / 94%) 0% 7%,
+      transparent 7% 100%
+    ),
+    conic-gradient(
+      transparent 0deg 18deg,
+      var(--sparkle-color) 18deg,
+      transparent 20deg 40deg,
+      var(--sparkle-color) 40deg,
+      transparent 43deg 87deg,
+      var(--sparkle-color) 87deg,
+      transparent 95deg 175deg,
+      var(--sparkle-color) 175deg,
+      transparent 178deg 220deg,
+      var(--sparkle-color) 220deg,
+      transparent 222deg 270deg,
+      var(--sparkle-color) 270deg,
+      transparent 275deg 300deg,
+      var(--sparkle-color) 300deg,
+      transparent 303deg 360deg
+    );
+
+  border-radius: 50%;
+  clip-path: polygon(
+    50% 0,
+    59.13% 26.64%,
+    85.13% -2.35%,
+    100% 50%,
+    50% 100%,
+    0 50%,
+    31.39% 34.86%
+  );
+
   content: "";
+
   filter: blur(1px);
-  opacity: 0;
+
+  transform: scale(var(--sparkle-scale))
+    translate(var(--sparkle-x-position), var(--sparkle-y-position))
+    rotate(var(--sparkle-rotation));
 }
 
 @media screen and (max-width: 600px) {
@@ -124,26 +135,59 @@ h1 {
     font-size: 5rem;
   }
 
-  .superscript {
-    font-size: 4rem;
+  /* sparkle */
+  .superscript::after {
+    --size: 6rem;
   }
+}
 
-  .bar {
-    height: 2.5rem;
-    width: 0.1rem;
-  }
+/* mute button */
 
-  #glow {
-    left: 38%;
-  }
+/* actual checkbox is hidden */
+input[type="checkbox"] {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
-  #glow:before {
-    border-bottom: 100px solid gold;
-    transform: rotate(90deg) translate(-45px, -20px);
-  }
+/* label acts as the interactive element */
+label {
+  --toggle-size: clamp(1.5rem, 2.5vw, 2.5rem);
 
-  #glow:after {
-    border-right: 100px solid transparent;
-    transform: rotate(40deg) translate(-10px, 32px);
-  }
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+  width: var(--toggle-size);
+  height: var(--toggle-size);
+
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* stack 2 icons inside label */
+label > svg {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+label path {
+  fill: black;
+}
+
+label .mute-off {
+  display: none;
+}
+
+/* checkbox hack to toggle visibility of SVG icons */
+:checked ~ label .mute-off {
+  display: block;
+}
+
+:checked ~ label .mute-on {
+  display: none;
 }

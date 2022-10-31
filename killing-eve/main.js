@@ -2,12 +2,14 @@ let dripDuration = 5;
 
 let track;
 
-// let audioTracks = [
-//   new Audio("audio/killer-shangrilah-sample.mp3"),
-//   new Audio("audio/xpectations-sample.mp3"),
-//   new Audio("audio/voodoo-voodoo-sample.mp3"),
-// ];
+// local references to audio files
+/* let audioTracks = [
+  new Audio("audio/killer-shangrilah-sample.mp3"),
+  new Audio("audio/xpectations-sample.mp3"),
+  new Audio("audio/voodoo-voodoo-sample.mp3"),
+]; */
 
+// github references to audio files
 let audioTracks = [
   new Audio(
     "https://github.com/robole/title-sequences/raw/main/killing-eve/audio/killer-shangrilah-sample.mp3"

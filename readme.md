@@ -82,14 +82,9 @@ The animation could be optimized further. The following could be done:
 
 View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 
-#### Design Decisions
-
-- The original typeface used is [Linotype Didot](https://www.myfonts.com/fonts/linotype/didot/). I found a suitable alternative in [Playfair Display](https://fonts.google.com/specimen/Playfair+Display).
-- I simplified the sparkle above the S glyph. It uses 2 diagonal beams, but it happens so fast, it makes little difference. The original is more intricate (as below).
-
 #### How was this made?
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. The [CSSRulePlugin](https://greensock.com/cssruleplugin/) was also required to animate pseudo-elements for the sparkle effect.
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Orange Is The New Black
 
