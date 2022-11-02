@@ -84,6 +84,8 @@ View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 
 #### How was this made?
 
+I discuss it all in this article, [How to create a slick animation from Schitt's Creek (TV series title sequence)](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html)!
+
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Orange Is The New Black
@@ -120,9 +122,9 @@ View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
 #### How was this made?
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
-
 I explain how in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html)!
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 #### Attribution
 
@@ -132,7 +134,7 @@ The audio is sampled from:
 1. Voodoo Voodoo by Etienne Daho.
 1. Killer Shangri-Lah by Pshycotic Beats.
 
-The audio is the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage.No copyright infringement is intended.
+The audio is the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
 
 ### The Marvelous Mrs Maisel
 
@@ -152,9 +154,9 @@ View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
 #### How was this made?
 
-It is a pure CSS animation.
-
 I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html)!
+
+It is a CSS animation.
 
 #### Attribution
 
@@ -175,6 +177,6 @@ View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 
 #### How was this made?
 
-It is a pure CSS animation.
-
 I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!
+
+It is a CSS animation.
