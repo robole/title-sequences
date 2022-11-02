@@ -78,7 +78,7 @@ The animation could be optimized further. The following could be done:
 
 [Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020.  The series follows the formerly wealthy Rose family's trials and tribulations.
 
-![screenshot schitts creek](schitts-creek/img/screenshot.gif)
+![screenshot schitts creek](schitts-creek/gsap/img/screenshot.gif)
 
 View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 
@@ -86,7 +86,9 @@ View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 
 I discuss it all in this article, [How to create a slick animation from Schitt's Creek (TV series title sequence)](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html)!
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+I created 2 versions:
+1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
+1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
 
 ### Orange Is The New Black
 
