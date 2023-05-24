@@ -60,6 +60,19 @@
 			<stop id="stop32242" stop-color="#601414" offset=".39687" />
 			<stop id="stop32106" stop-color="#a41313" offset="1" />
 		</radialGradient>
+		<radialGradient
+			id="radial4"
+			cx="599.01"
+			cy="233.7"
+			r="76.168"
+			gradientTransform="matrix(.17493 .98458 -.42958 .076323 583.62 -389.03)"
+			gradientUnits="userSpaceOnUse"
+			spreadMethod="reflect"
+		>
+			<stop id="stop32104" stop-color="#ff3c3c" offset="0" />
+			<stop id="stop32242" stop-color="#601414" offset=".39687" />
+			<stop id="stop32106" stop-color="#a41313" offset="1" />
+		</radialGradient>
 	</defs>
 	<rect id="bg" width="1200" height="800" />
 	<g id="title">

@@ -133,11 +133,8 @@ masterTimeline
   .set("#bottom-left-box", { scaleX: 0, transformOrigin: "100% 50%" })
   .set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" });
 
-masterTimeline
-  .add(part1(), 0)
-  .add(part2(), 0)
-  .add(part3(), 15) // at 15 seconds
-  .add(part4(), 19);
+masterTimeline.add(part1(), 0).add(part2(), 0).add(part3(), 15); // at 15 seconds
+// .add(part4(), 19);
 
 const titleSvg = document.querySelector("#titleSvg");
 
