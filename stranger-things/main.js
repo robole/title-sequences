@@ -87,7 +87,6 @@ function part2() {
 
 function part3() {
   let boxesTimeline = gsap.timeline();
-
   boxesTimeline
     .to("#top-box", { scaleX: 1, duration: 1, ease: "power2.out" })
     .to(
@@ -118,6 +117,27 @@ function part4() {
   return visibilityTimeline;
 }
 
+function polish() {
+  let magicBoxesTimeline = gsap.timeline();
+
+  magicBoxesTimeline
+    .to("#black-magic-box1", {
+      opacity: 1,
+      ease: "power.out",
+      duration: 0.3,
+    })
+    .to(
+      "#black-magic-box2",
+      {
+        opacity: 1,
+        duration: 0.2,
+      },
+      "<+=2.4"
+    );
+
+  return magicBoxesTimeline;
+}
+
 const masterTimeline = gsap.timeline({
   onStart: () => {
     playSong();
@@ -131,12 +151,16 @@ const masterTimeline = gsap.timeline({
 masterTimeline
   .set("#top-box", { scaleX: 0, transformOrigin: "50% 50%" })
   .set("#bottom-left-box", { scaleX: 0, transformOrigin: "100% 50%" })
-  .set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" });
+  .set("#bottom-right-box", { scaleX: 0, transformOrigin: "0% 50%" })
+  .set("#black-magic-box1, #black-magic-box2", {
+    opacity: 0,
+  });
 
 masterTimeline
   .add(part1(), 0)
   .add(part2(), 0)
-  .add(part3(), 15) // at 15 seconds
+  .add(polish(), 5.9) // at 5.9 seconds mark
+  .add(part3(), 15)
   .add(part4(), 19);
 
 const titleSvg = document.querySelector("#titleSvg");
