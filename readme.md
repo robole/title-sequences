@@ -2,24 +2,42 @@
 
 This project creates web versions of the title sequences from TV Shows and Movies. The aim is to improve my CSS and animation chops.
 
-I have bundled the project with [vite](https://vitejs.dev/), so it can be **run locally as a mini-website**. Also, [**you can view them all in a collection on codepen**](https://codepen.io/collection/nNmwgP).
+I have bundled the project with [vite](https://vitejs.dev/), so it can be **run locally as a mini-website**. Also, you can **view all of the title sequences in [this collection on codepen](https://codepen.io/collection/nNmwgP)**.
 
 ## Run the project
 
-To clone and run the project, run the following:
+Clone the project:
 
-```bash
+```shell
 git clone https://github.com/robole/title-sequences
 cd title-sequences
-npm i
+```
+
+With your package manager of choice, install the dependencies and run the dev server:
+
+```shell
+#npm
+npm i 
 npm run dev
 ```
 
-The website is run on: <http://localhost:3000/>.
+```shell
+# pnpm
+pnpm i 
+pnpm dev
+```
 
-If you open the project in VS Code, there is an included [task](https://code.visualstudio.com/Docs/editor/tasks) that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable it.
+```shell
+# yarn
+yarn install
+yarn run dev
+```
 
-Otherwise, you can run the command `npm run dev` to start the dev server yourself, once you have installed the dependecies.
+The website is run by default on: <http://localhost:3000/>.
+
+If you open the project in VS Code, there is an included [task](https://code.visualstudio.com/Docs/editor/tasks) that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable this.
+
+Otherwise, you can run the `dev` script to start the dev server yourself.
 
 ## Title sequences
 
@@ -76,7 +94,7 @@ The animation could be optimized further. The following could be done:
 
 ### Schitts Creek
 
-[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020.  The series follows the formerly wealthy Rose family's trials and tribulations.
+[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
 
 ![screenshot schitts creek](schitts-creek/gsap/img/screenshot.gif)
 
@@ -166,7 +184,7 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 ### Upload
 
-[Upload](https://en.wikipedia.org/wiki/Upload_(TV_series)) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
 
 <img src="upload/img/demo.gif"
 	alt="demo of Upload title sequence"
@@ -181,4 +199,11 @@ View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 
 I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!
 
-It is a CSS animation.
+## Stranger Things
+
+Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers.
+
+Stranger Things is set in the 1980s in the fictional town of Hawkins,
+Indiana. The story centers on a number of mysteries and supernatural
+events occurring around the town and their impact on an ensemble of
+child and adult characters.
