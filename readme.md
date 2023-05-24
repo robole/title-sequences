@@ -43,13 +43,16 @@ Otherwise, you can run the `dev` script to start the dev server yourself.
 
 So far, these are the title sequences:
 
+<!-- TOC -->
 1. [Ozark](#ozark)
 1. [Better Call Saul](#better-call-saul)
-1. [Schitt's Creek](#schitts-creek)
-1. [Orange is The New Black](#orange-is-the-new-black)
+1. [Schitts Creek](#schitts-creek)
+1. [Orange Is The New Black](#orange-is-the-new-black)
 1. [Killing Eve](#killing-eve)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
 1. [Upload](#upload)
+1. [Stranger Things](#stranger-things)
+<!-- /TOC -->
 
 ### Ozark
 
@@ -199,11 +202,14 @@ View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 
 I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!
 
-## Stranger Things
+### Stranger Things
 
-Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers.
+[Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things) is an American science fiction horror drama television series created by the Duffer Brothers. Stranger Things is set in the 1980s in the fictional town of Hawkins, Indiana. The story centers on a number of mysteries and supernatural events occurring around the town and their impact on an ensemble of child and adult characters.
 
-Stranger Things is set in the 1980s in the fictional town of Hawkins,
-Indiana. The story centers on a number of mysteries and supernatural
-events occurring around the town and their impact on an ensemble of
-child and adult characters.
+![screenshot of title of stranger things](/stranger-things/img/title-reference.png)
+
+#### Attribution
+
+The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
+
+The audio is the property of the copyright holders. Samples are used here as a commentary of how complementary the song is with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.

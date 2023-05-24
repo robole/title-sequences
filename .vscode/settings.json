@@ -1,3 +1,5 @@
 {
-	"task.allowAutomaticTasks": "on"
+  "task.allowAutomaticTasks": "on",
+  "markyMarkdown.tableOfContents.levelRange": "3..3",
+  "markyMarkdown.tableOfContents.listType": "ordered list"
 }

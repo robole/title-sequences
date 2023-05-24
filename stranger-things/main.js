@@ -3,7 +3,7 @@ import { EasePack } from "gsap/EasePack";
 
 gsap.registerPlugin(EasePack);
 
-let song = new Audio("audio/theme-homemade.mp3");
+let song = new Audio("audio/title.mp3");
 const muteToggle = document.querySelector("input[type='checkbox']");
 
 muteToggle.addEventListener("click", toggleMute);
