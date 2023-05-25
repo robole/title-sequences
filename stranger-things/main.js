@@ -3,22 +3,6 @@ import { EasePack } from "gsap/EasePack";
 
 gsap.registerPlugin(EasePack);
 
-let song = new Audio("audio/title.mp3");
-const muteToggle = document.querySelector("input[type='checkbox']");
-
-muteToggle.addEventListener("click", toggleMute);
-
-function toggleMute() {
-  song.muted = !song.muted;
-}
-
-function playSong() {
-  song.volume = 0.3;
-  song.currentTime = 0;
-  song.muted = !muteToggle.checked;
-  song.play();
-}
-
 function part1() {
   let scaleTimeline = gsap.timeline();
 
@@ -168,3 +152,38 @@ const titleSvg = document.querySelector("#titleSvg");
 titleSvg.addEventListener("click", () => {
   masterTimeline.restart();
 });
+
+// audio toggle
+
+let song = new Audio("audio/title.mp3");
+const muteToggle = document.querySelector("#volume");
+
+muteToggle.addEventListener("click", toggleMute);
+
+function toggleMute() {
+  song.muted = !song.muted;
+}
+
+function playSong() {
+  song.volume = 0.3;
+  song.currentTime = 0;
+  song.muted = !muteToggle.checked;
+  song.play();
+}
+
+// shadow toggle
+
+const shadowToggle = document.querySelector("#shadow-toggle input");
+
+shadowToggle.addEventListener("click", toggleShadow);
+
+function toggleShadow() {
+  const titleGroup = document.querySelector("#title");
+  const value = titleGroup.getAttribute("filter");
+
+  if (value === null || value === "") {
+    titleGroup.setAttribute("filter", "url(#shadow)");
+  } else {
+    titleGroup.setAttribute("filter", "");
+  }
+}

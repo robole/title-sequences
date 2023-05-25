@@ -1,6 +1,9 @@
 /*
 
-Click the unmute button for accompanying audio that skips between tracks featured in the show.
+Click the unmute button for accompanying audio.
+
+Check the "show shadow" checkbox to add a shadow filter to the title for a 
+more neon appearance - it slows down the aninmation in Firefox.
 
 Part of Title Sequences collection:
 https://codepen.io/collection/nNmwgP
@@ -11,34 +14,40 @@ https://github.com/robole/title-sequences
 */
 
 body {
+  --max-width: 1000px;
+
+  display: grid;
   overflow: hidden;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  place-items: center;
 }
 
 svg {
   display: block;
   width: 100%;
-  max-width: 800px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
 /* volume toggle */
 
-label {
+label[for="volume"] {
   position: fixed;
   top: calc(0.5rem + 1vw);
   right: clamp(
-    0.5rem,
-    calc(50vw - 400px + 0.5rem),
-    calc(50vw - 400px + 0.5rem)
+    1rem,
+    calc(50vw - var(--max-width) / 2 + 0.5rem),
+    calc(50vw - var(--max-width) / 2 + 0.5rem)
   );
-  width: clamp(1rem, calc(1.25rem + 2vw), 2rem);
-  height: clamp(1rem, calc(1.25rem + 2vw), 2rem);
+  width: clamp(1rem, calc(1.25rem + 1vw), 2rem);
+  height: clamp(1rem, calc(1.25rem + 1vw), 2rem);
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
 }
 
-label > svg {
+label[for="volume"] > svg {
   position: absolute;
   top: 5%;
   left: 5%;
@@ -46,7 +55,7 @@ label > svg {
   height: 90%;
 }
 
-label path {
+label[for="volume"] path {
   fill: black;
 }
 
@@ -54,7 +63,7 @@ label .mute-off {
   display: none;
 }
 
-input[type="checkbox"] {
+#volume {
   display: none;
   width: 0;
   height: 0;
@@ -66,4 +75,19 @@ input[type="checkbox"] {
 
 :checked ~ label .mute-on {
   display: none;
+}
+
+#shadow-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+#shadow-toggle input {
+  --size: 1.5rem;
+
+  width: var(--size);
+  height: var(--size);
+  box-shadow: 0 0 2px hsl(0deg 0% 0% / 30%), 0 1px 2px hsl(0deg 0% 0% / 20%);
 }
