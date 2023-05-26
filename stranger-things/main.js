@@ -107,16 +107,17 @@ function polish() {
   magicBoxesTimeline
     .to("#black-magic-box1", {
       opacity: 1,
-      ease: "power.out",
-      duration: 0.3,
+      ease: "power2.in",
+      duration: 0.8,
     })
     .to(
       "#black-magic-box2",
       {
         opacity: 1,
-        duration: 0.2,
+        duration: 0.8,
+        ease: "power2.in",
       },
-      "<+=2.4"
+      "<+=2.2"
     );
 
   return magicBoxesTimeline;
@@ -143,7 +144,7 @@ masterTimeline
 masterTimeline
   .add(part1(), 0)
   .add(part2(), 0)
-  .add(polish(), 5.9) // at 5.9 seconds mark
+  .add(polish(), 5.3) // at 5.3 second mark
   .add(part3(), 15)
   .add(part4(), 19);
 
