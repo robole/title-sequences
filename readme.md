@@ -19,15 +19,11 @@ With your package manager of choice, install the dependencies and run the dev se
 #npm
 npm i 
 npm run dev
-```
 
-```shell
 # pnpm
 pnpm i 
 pnpm dev
-```
 
-```shell
 # yarn
 yarn install
 yarn run dev
@@ -36,8 +32,6 @@ yarn run dev
 The website is run by default on: <http://localhost:3000/>.
 
 If you open the project in VS Code, there is an included [task](https://code.visualstudio.com/Docs/editor/tasks) that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable this.
-
-Otherwise, you can run the `dev` script to start the dev server yourself.
 
 ## Title sequences
 
@@ -60,7 +54,7 @@ So far, these are the title sequences:
 
 This instance is based on Season 1 Episode 1.
 
-![screenshot Ozark title](ozark/img/screenshot.gif)
+![screenshot Ozark title](ozark/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
 
@@ -74,7 +68,7 @@ I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 [Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series. It is a spin-off, prequel, and a sequel to [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad). Set primarily in the early to middle part of the 2000s in Albuquerque, New Mexico, the series follows Jimmy McGill (Bob Odenkirk), an earnest lawyer and former con artist, as he becomes an egocentric criminal defense attorney known as Saul Goodman.
 
-![screenshot Better Call Saul title](better-call-saul/img/screenshot.gif)
+![screenshot Better Call Saul title](better-call-saul/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/rNWRoBO).
 
@@ -99,7 +93,7 @@ The animation could be optimized further. The following could be done:
 
 [Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
 
-![screenshot schitts creek](schitts-creek/gsap/img/screenshot.gif)
+![screenshot schitts creek](schitts-creek/gsap/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
 
@@ -117,7 +111,7 @@ I created 2 versions:
 
 I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
 
-![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.gif)
+![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
 
@@ -139,7 +133,7 @@ The animation is a CSS animation, but uses JavaScript to toggle a class to trigg
 
 [Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series, produced in the United Kingdom for BBC America and BBC Three. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
 
-![screenshot Killing Eve title](killing-eve/img/demo.gif)
+![screenshot Killing Eve title](killing-eve/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
@@ -166,10 +160,8 @@ The audio is the property of the copyright holders. Samples are used here as a c
 This instance is the opening title from Episode 2 of Season 4
 
 <img
-	src="the-marvelous-mrs-maisel/img/demo.gif"
+	src="the-marvelous-mrs-maisel/img/screenshot.png"
 	alt="demo of The Marvelous Mrs. Maisel sequence"
-	width="600"
-	height="401"
 	loading="lazy"
 />
 
@@ -189,10 +181,8 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 [Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
 
-<img src="upload/img/demo.gif"
-	alt="demo of Upload title sequence"
-	width="600"
-	height="401"
+<img src="upload/img/screenshot.png"
+	alt="screenshot of Upload title sequence"
 	loading="lazy"
 />
 

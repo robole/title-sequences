@@ -19,8 +19,9 @@ https://github.com/robole/title-sequences
   }
 
   body {
-    /* background-image: url(img/bg-large.jpg); */
-    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg");
+    background-image: url("img/bg-large.jpg");
+
+    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg"); */
   }
 
   main {
@@ -30,8 +31,9 @@ https://github.com/robole/title-sequences
 
 @media (min-width: 481px) and (max-width: 959px) {
   body {
-    /* background-image: url(img/bg-med.jpg); */
-    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg");
+    background-image: url("img/bg-med.jpg");
+
+    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg"); */
   }
 
   main {
@@ -49,8 +51,9 @@ https://github.com/robole/title-sequences
   }
 
   body {
-    /* background-image: url(img/bg-small.jpg); */
-    background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg");
+    background-image: url("img/bg-small.jpg");
+
+    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg"); */
   }
 }
 

@@ -13,13 +13,11 @@
 }
 
 body {
-  display: grid;
-  justify-content: center;
+  margin: 0;
 }
 
 svg {
-  width: 100%;
-  max-width: 800px;
+  height: 100%;
 }
 
 @keyframes scale-up {
