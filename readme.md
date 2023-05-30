@@ -200,6 +200,12 @@ I explain how in this article, [How to create a slick CSS animation from The Mar
 
 View the [codepen](https://codepen.io/robjoeol/pen/xxyNJWP).
 
+#### How was this made?
+
+I discuss it all in this article, [How to create a slick animation from Stranger Things](https://www.roboleary.net/animation/2023/05/30/how-to-make-a-slick-animation-stranger-things-title-sequence.html)!
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+
 #### Attribution
 
 The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
