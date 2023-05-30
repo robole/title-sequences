@@ -198,6 +198,8 @@ I explain how in this article, [How to create a slick CSS animation from The Mar
 
 ![screenshot of title of stranger things](/stranger-things/img/title-reference.png)
 
+View the [codepen](https://codepen.io/robjoeol/pen/xxyNJWP).
+
 #### Attribution
 
 The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
