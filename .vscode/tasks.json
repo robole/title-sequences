@@ -4,7 +4,7 @@
     {
       "label": "Run dev server",
       "type": "shell",
-      "command": "npx vite",
+      "command": "pnpm dev",
       "runOptions": {
         "runOn": "folderOpen"
       }

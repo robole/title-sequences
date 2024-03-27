@@ -1,0 +1,84 @@
+/* stylelint-disable */
+:root {
+  --text-color: hsl(44deg 98% 50%);
+  --shadow-color: hsl(9deg 99% 24%);
+}
+
+@font-face {
+  font-family: "VI Vong Vang";
+  src: url("./vi-vong-vang.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100dvh;
+  margin: 0;
+  background-color: black;
+
+  place-items: center;
+  overflow: hidden;
+}
+
+.title {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 1920 / 1080;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+
+  animation: reveal 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+
+  color: var(--text-color);
+
+  font-family: "VI Vong Vang", cursive;
+  font-size: clamp(1rem, 15vw + 0.75rem, 50rem);
+  line-height: 1;
+  letter-spacing: -1px;
+  padding: 0 1%;
+  margin-inline-start: 10%;
+  margin-block-start: 5%;
+
+  mask-image: linear-gradient(
+    to left,
+    transparent 0% 48.5%,
+    rgba(0, 0, 0, 0.3) 48.5%,
+    transparent 49%,
+    rgba(0, 0, 0, 0.1) 50%,
+    black 50% 100%
+  );
+  mask-size: 200% 100%;
+  mask-position: 100%;
+
+  text-shadow: 8px 0 0 var(--shadow-color), 6px 1px 0 var(--shadow-color),
+    7px 2px 0 var(--shadow-color), 8px 3px 0 var(--shadow-color),
+    0 1px 0 var(--shadow-color), 1px 2px 0 var(--shadow-color),
+    2px 3px 0 var(--shadow-color), 3px 4px 0 var(--shadow-color),
+    3px 5px 0 var(--shadow-color);
+}
+
+h1 span:nth-of-type(1) {
+  grid-column: 1 / -1;
+}
+
+h1 span:nth-of-type(2) {
+  grid-column: 2;
+}
+
+@keyframes reveal {
+  100% {
+    mask-position: 0%;
+  }
+}

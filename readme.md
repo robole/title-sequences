@@ -19,14 +19,6 @@ With your package manager of choice, install the dependencies and run the dev se
 #npm
 npm i 
 npm run dev
-
-# pnpm
-pnpm i 
-pnpm dev
-
-# yarn
-yarn install
-yarn run dev
 ```
 
 The website is run by default on: <http://localhost:3000/>.
@@ -46,6 +38,7 @@ So far, these are the title sequences:
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
 1. [Upload](#upload)
 1. [Stranger Things](#stranger-things)
+1. [Jackie Brown](#jackie-brown)
 <!-- /TOC -->
 
 ### Ozark
@@ -179,7 +172,7 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 ### Upload
 
-[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very ex(Jodie Comer)pensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
 
 <img src="upload/img/screenshot.png"
 	alt="screenshot of Upload title sequence"
@@ -211,3 +204,15 @@ I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
 
 The audio is the property of the copyright holders. Samples are used here as a commentary of how complementary the song is with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
+
+### Jackie Brown
+
+Jackie Brown is an American crime film written and directed by Quentin Tarantino.
+
+![screenshot of title of jackie brown](/jackie-brown/img/title-reference.png)
+
+View the codepen.
+
+#### Attribution
+
+The original typeface is ITC Tiffany Heavy, a premium font by ITC. I used a free alternative typeface called [VI Vong Vang](https://www.whatfontis.com/FF_VI-Vong-Vang.font)

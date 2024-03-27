@@ -6,10 +6,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "lint -- --fix",
     "prettier": "prettier . --check",
-    "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm:run lint:fix"
+    "prettier:fix": "prettier -- --write",
+    "format": "prettier:fix && npm:run lint:fix"
   },
   "devDependencies": {
     "eslint": "^8.11.0",
