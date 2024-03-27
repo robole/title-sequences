@@ -1,7 +1,7 @@
 /* stylelint-disable */
 :root {
   --text-color: hsl(44deg 98% 50%);
-  --shadow-color: hsl(9deg 99% 24%);
+  --shadow-color: hsl(9deg 99% 19%);
 }
 
 @font-face {
@@ -27,7 +27,7 @@ body {
   width: 100%;
   max-width: 1920px;
   aspect-ratio: 1920 / 1080;
-  background-image: url("img/bg.png");
+  background-image: url("img/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }

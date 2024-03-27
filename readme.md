@@ -211,7 +211,7 @@ Jackie Brown is an American crime film written and directed by Quentin Tarantino
 
 ![screenshot of title of jackie brown](/jackie-brown/img/title-reference.png)
 
-View the codepen.
+View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
 #### Attribution
 
