@@ -1,7 +1,6 @@
-/* stylelint-disable */
 :root {
   --text-color: hsl(44deg 98% 50%);
-  --shadow-color: hsl(9deg 99% 19%);
+  --shadow-color: hsl(0deg 96% 27%);
 }
 
 @font-face {
@@ -15,12 +14,12 @@
 
 body {
   display: grid;
+  overflow: hidden;
   height: 100dvh;
   margin: 0;
   background-color: black;
 
   place-items: center;
-  overflow: hidden;
 }
 
 .title {
@@ -34,7 +33,7 @@ body {
 
 h1 {
   display: grid;
-  grid-template-columns: 15% 1fr;
+  padding: 0 1%;
 
   animation: reveal 1.5s;
   animation-fill-mode: forwards;
@@ -45,22 +44,22 @@ h1 {
 
   font-family: "VI Vong Vang", cursive;
   font-size: clamp(1rem, 15vw + 0.75rem, 50rem);
-  line-height: 1;
+  grid-template-columns: 15% 1fr;
   letter-spacing: -1px;
-  padding: 0 1%;
-  margin-inline-start: 10%;
+  line-height: 1;
   margin-block-start: 5%;
+  margin-inline-start: 10%;
 
   mask-image: linear-gradient(
     to left,
     transparent 0% 48.5%,
-    rgba(0, 0, 0, 0.3) 48.5%,
+    rgb(0 0 0 / 30%) 48.5%,
     transparent 49%,
-    rgba(0, 0, 0, 0.1) 50%,
+    rgb(0 0 0 / 10%) 50%,
     black 50% 100%
   );
-  mask-size: 200% 100%;
   mask-position: 100%;
+  mask-size: 200% 100%;
 
   text-shadow: 8px 0 0 var(--shadow-color), 6px 1px 0 var(--shadow-color),
     7px 2px 0 var(--shadow-color), 8px 3px 0 var(--shadow-color),
