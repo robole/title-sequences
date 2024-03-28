@@ -1,0 +1,232 @@
+/* stylelint-disable */
+
+:root {
+  --text-color-initial: #08146d;
+  --text-color-final: white;
+
+  --animation-duration: 3.5s;
+  --animation-delay: 2s;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  background: black;
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-family: "HomepageBaukasten";
+  font-size: 5rem;
+
+  margin: 0 5px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.letter {
+  width: min-content;
+  color: var(--text-color-initial);
+}
+
+/* bar  of A*/
+.letter:nth-of-type(1) {
+  position: relative;
+
+  color: transparent;
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 3); */
+}
+
+/*outer leg of A*/
+.letter:nth-of-type(1)::after {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+  color: green;
+
+  opacity: 0;
+  clip-path: polygon(12.15% 0%, 69.16% 5.68%, 23.54% 85%, 0% 85%);
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 1); */
+}
+
+/*inside leg of A */
+.letter:nth-of-type(1)::before {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+  color: red;
+
+  opacity: 0;
+  clip-path: polygon(35% 11%, 69.16% 5.68%, 99.08% 85%, 76% 85%);
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 2); */
+}
+
+.letter:nth-of-type(2) {
+  position: relative;
+  opacity: 1;
+}
+
+.letter:nth-of-type(2)::before {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+  color: red;
+
+  clip-path: polygon(8.24% 18.07%, 40% 18.1%, 40% 85%, 7.82% 86.13%);
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: 5s; */
+}
+
+.letter:nth-of-type(2)::after {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+  color: green;
+
+  clip-path: polygon(40.4% 68.86%, 100.57% 68.89%, 100.57% 85%, 40.4% 85%);
+}
+
+.letter:nth-of-type(3) {
+  grid-column: 3;
+  opacity: 0;
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: var(--animation-delay); */
+}
+
+/* top and bottom arm of E*/
+.letter:nth-of-type(4) {
+  position: relative;
+
+  color: transparent;
+
+  --start: 19.25%;
+  --height: 14%;
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0 var(--start),
+    green var(--start) calc(var(--start) + var(--height)),
+    transparent calc(var(--start) + var(--height)) 100%
+  );
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 2); */
+}
+
+/* vertical bar of E*/
+.letter:nth-of-type(4)::before {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+
+  clip-path: polygon(10.87% 19.14%, 37% 19.18%, 37% 84.98%, 11.65% 84.99%);
+
+  color: blue;
+
+  /* color: transparent;
+
+  animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 1); */
+}
+
+/* middle arm of E*/
+.letter:nth-of-type(4)::after {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+
+  color: green;
+
+  --start: 19.2%;
+  --second: 70.2%;
+  --height: 14.5%;
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0 var(--start),
+    red var(--start) calc(var(--start) + var(--height)),
+    transparent calc(var(--start) + var(--height)) var(--second),
+    red var(--second) calc(100% - var(--height)),
+    transparent calc(100% - var(--height)) 100%
+  );
+
+  /* animation: var(--animation-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 3); */
+}
+
+.letter:nth-of-type(5) {
+  position: relative;
+
+  justify-self: end;
+
+  /* animation: var(--animatiorelativen-duration) linear reveal;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--animation-delay) * 3); */
+}
+
+.letter:nth-of-type(5)::after {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+
+  clip-path: polygon(7.52% 19.14%, 32.16% 19.18%, 93% 83.86%, 70.38% 83.87%);
+
+  color: yellow;
+}
+
+.letter:nth-of-type(5)::before {
+  position: absolute;
+  left: 0;
+  content: attr(data-letter);
+
+  clip-path: polygon(
+    67.64% 18.01%,
+    90.74% 18.05%,
+    90.84% 83.86%,
+    68.84% 83.87%
+  );
+
+  color: purple;
+}
+
+@keyframes reveal {
+  0% {
+    color: transparent;
+  }
+
+  33%,
+  100% {
+    color: var(--text-color-initial);
+    opacity: 1;
+  }
+
+  100% {
+    color: var(--text-color-final);
+  }
+}

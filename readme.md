@@ -39,6 +39,7 @@ So far, these are the title sequences:
 1. [Upload](#upload)
 1. [Stranger Things](#stranger-things)
 1. [Jackie Brown](#jackie-brown)
+1. [Alien](#alien)
 <!-- /TOC -->
 
 ### Ozark
@@ -172,7 +173,7 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 ### Upload
 
-[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very ex(Jodie Comer)pensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
 
 <img src="upload/img/screenshot.png"
 	alt="screenshot of Upload title sequence"
@@ -187,7 +188,7 @@ I explain how in this article, [How to create a slick CSS animation from The Mar
 
 ### Stranger Things
 
-[Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things) is an American science fiction horror drama television series created by the Duffer Brothers. Stranger Things is set in the 1980s in the fictional town of Hawkins, Indiana. The story centers on a number of mysteries and supernatural events occurring around the town and their impact on an ensemble of child and adult characters.
+[Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things) is an American science fiction horror drama television series created by the Duffer Brothers. The story centers on a number of mysteries and supernatural events occurring in a small town and their impact on an ensemble of child and adult characters.
 
 ![screenshot of title of stranger things](/stranger-things/img/title-reference.png)
 
@@ -216,3 +217,7 @@ View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 #### Attribution
 
 The original typeface is ITC Tiffany Heavy, a premium font by ITC. I used a free alternative typeface called [VI Vong Vang](https://www.whatfontis.com/FF_VI-Vong-Vang.font)
+
+### Alien
+
+https://www.youtube.com/watch?v=7BYzzast0jw
