@@ -204,7 +204,7 @@ I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
 
-The audio is the property of the copyright holders. Samples are used here as a commentary of how complementary the song is with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
+The audio is the property of the copyright holders. The samples used here are to provide commentary of how complementary the songs are with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
 
 ### Jackie Brown
 
@@ -216,8 +216,12 @@ View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
 #### Attribution
 
-The original typeface is ITC Tiffany Heavy, a premium font by ITC. I used a free alternative typeface called [VI Vong Vang](https://www.whatfontis.com/FF_VI-Vong-Vang.font)
+The original typeface is ITC Tiffany Heavy, which is a premium font by ITC. I used a free alternative typeface called [VI Vong Vang](https://www.whatfontis.com/FF_VI-Vong-Vang.font)
 
 ### Alien
 
-https://www.youtube.com/watch?v=7BYzzast0jw
+Alien is a 1979 science fiction horror film directed by Ridley Scott.
+
+![screenshot of title of alien. letters fade into view in segments.](/alien/img/title-reference.webp)
+
+View the codepen (**ADD SOON**).

@@ -1,6 +1,6 @@
 # Todo
 
-1. Alien https://www.artofthetitle.com/title/alien/
+1. Alien https://www.artofthetitle.com/title/alien/ https://www.youtube.com/watch?v=7BYzzast0jw
 1. The Flight Attendant https://www.youtube.com/watch?v=50LvtHpYV8Y
 1. Oldboy https://www.artofthetitle.com/title/oldboy/
 1. Pick something from [The Queens Gambit interview](https://www.artofthetitle.com/title/the-queens-gambit/)
