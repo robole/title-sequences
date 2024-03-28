@@ -2,18 +2,11 @@
 
 This project creates web versions of the title sequences from TV Shows and Movies. The aim is to improve my CSS and animation chops.
 
-I have bundled the project with [vite](https://vitejs.dev/), so it can be **run locally as a mini-website**. Also, you can **view all of the title sequences in [this collection on codepen](https://codepen.io/collection/nNmwgP)**.
+You can **view all of the title sequences in [this collection on codepen](https://codepen.io/collection/nNmwgP)**.
 
 ## Run the project
 
-Clone the project:
-
-```shell
-git clone https://github.com/robole/title-sequences
-cd title-sequences
-```
-
-With your package manager of choice, install the dependencies and run the dev server:
+I have bundled the project with [vite](https://vitejs.dev/), so it can be **run locally as a mini-website**. To run the project: Clone the project, install the dependencies with your package manager of choice, and run the dev server with `dev` npm script:
 
 ```shell
 #npm
@@ -23,15 +16,13 @@ npm run dev
 
 The website is run by default on: <http://localhost:3000/>.
 
-If you open the project in VS Code, there is an included [task](https://code.visualstudio.com/Docs/editor/tasks) that will start the dev server every time you open the project. The first time you open the project, you may need to run the command **"Tasks: Manage Automatic Tasks in Folder"** to enable this.
-
 ## Title sequences
 
 So far, these are the title sequences:
 
 <!-- TOC -->
-1. [Ozark](#ozark)
 1. [Better Call Saul](#better-call-saul)
+1. [Ozark](#ozark)
 1. [Schitts Creek](#schitts-creek)
 1. [Orange Is The New Black](#orange-is-the-new-black)
 1. [Killing Eve](#killing-eve)
@@ -41,22 +32,6 @@ So far, these are the title sequences:
 1. [Jackie Brown](#jackie-brown)
 1. [Alien](#alien)
 <!-- /TOC -->
-
-### Ozark
-
-[Ozark](<https://en.wikipedia.org/wiki/Ozark_(TV_series)>) is an American crime drama streaming television series created by Bill Dubuque and Mark Williams for Netflix. The series follows Marty and Wendy Byrde, a married couple who move their family to the Lake of the Ozarks to create a big money laundering operation for a Mexican drug cartel.
-
-This instance is based on Season 1 Episode 1.
-
-![screenshot Ozark title](ozark/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
-
-#### How was this made?
-
-I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html)!
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Better Call Saul
 
@@ -82,6 +57,22 @@ The animation could be optimized further. The following could be done:
 
 1. At the beginning of the animation, the title is blurry and comes into focus. This is done by animating `filter:blur()`. It would probably be more performant to overlay a blurry version of the background, and animate the opacity on that instead.
 1. There is a separate animation timeline that moves a duplicate of the background image (Lady Liberity) to create some subtle movement. It may be more performant to turn this into a GIF, but for a large GIF the file size might be significant. This tradeoff may not be worth making.
+
+### Ozark
+
+[Ozark](<https://en.wikipedia.org/wiki/Ozark_(TV_series)>) is an American crime drama streaming television series created by Bill Dubuque and Mark Williams for Netflix. The series follows Marty and Wendy Byrde, a married couple who move their family to the Lake of the Ozarks to create a big money laundering operation for a Mexican drug cartel.
+
+This instance is based on Season 1 Episode 1.
+
+![screenshot Ozark title](ozark/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
+
+#### How was this made?
+
+I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html)!
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ### Schitts Creek
 
