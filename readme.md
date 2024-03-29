@@ -6,10 +6,10 @@ You can **view all of the title sequences in [this collection on codepen](https:
 
 ## Run the project
 
-You can run the **project locally as a mini-website**. To run the project: clone the repo, install the dependencies with your package manager of choice, and run the dev server with `dev` npm script:
+You can run the **project locally as a mini-website**. To run the project: clone the repo, install the dependencies with your package manager of choice, and run the dev server with `dev` npm script.
 
 ```shell
-#npm
+# using npm
 npm i 
 npm run dev
 ```
@@ -73,16 +73,6 @@ View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/2020/12/24/title-sequences.html) for more info.
 
-#### Attribution
-
-The audio is sampled from:
-
-1. Xpectation by Unloved.
-1. Voodoo Voodoo by Etienne Daho.
-1. Killer Shangri-Lah by Pshycotic Beats.
-
-The audio is the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
-
 ### Ozark
 
 [Ozark](<https://en.wikipedia.org/wiki/Ozark_(TV_series)>) is an American crime drama. The series follows Marty and Wendy Byrde, a married couple who move their family to the Lake of the Ozarks to create a big money laundering operation for a Mexican drug cartel.
@@ -111,7 +101,7 @@ I created 2 versions:
 1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
 1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
 
-You can read my [notes)](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html) for more info.
+You can read my [notes](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html) for more info.
 
 ### Orange Is The New Black
 
@@ -146,11 +136,7 @@ View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
 #### Implementation notes
 
-It is a CSS animation. You can my [notes](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html) for more info.
-
-#### Attribution
-
-I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/). This is free for personal use only.
+It is a CSS animation. You can read my [notes](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html) for more info.
 
 ### Upload
 
@@ -179,8 +165,16 @@ View the [codepen](https://codepen.io/robjoeol/pen/xxyNJWP).
 
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/animation/2023/05/30/how-to-make-a-slick-animation-stranger-things-title-sequence.html) for more info!
 
-#### Attribution
+## Attribution and disclaimer
 
-The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
+All fonts used are free to use. The font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/) used for The Marvelous Mrs Maisel title is free for personal use only.
 
-The audio is the property of the copyright holders. The samples used here are to provide commentary of how complementary the songs are with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
+I have taken some clips from songs to accompany some of the titles. The songs are the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage. No copyright infringement is intended. Here is a list of songs sampled:
+- For Killing Eve:
+	- Xpectation by Unloved.
+	- Voodoo Voodoo by Etienne Daho.
+	- Killer Shangri-Lah by Pshycotic Beats.
+- For Schitts Creek:
+	- Main Theme by Maribeth Solomon
+- For Stranger Things:
+	- The theme song is by Kyle Dixon and Michael Stein.
