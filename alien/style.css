@@ -21,9 +21,19 @@
 }
 
 body {
-  width: 100%;
+  display: grid;
+  overflow: hidden;
   height: 100dvh;
   margin: 0;
+  background-color: black;
+
+  place-items: center;
+}
+
+.title {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 1920 / 1080;
 
   background: black;
   background-image: url("img/bg.jpg");
