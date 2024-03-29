@@ -6,7 +6,7 @@ You can **view all of the title sequences in [this collection on codepen](https:
 
 ## Run the project
 
-I have bundled the project with [vite](https://vitejs.dev/), so it can be **run locally as a mini-website**. To run the project: Clone the project, install the dependencies with your package manager of choice, and run the dev server with `dev` npm script:
+You can run the **project locally as a mini-website**. To run the project: clone the repo, install the dependencies with your package manager of choice, and run the dev server with `dev` npm script:
 
 ```shell
 #npm
@@ -21,112 +21,57 @@ The website is run by default on: <http://localhost:3000/>.
 So far, these are the title sequences:
 
 <!-- TOC -->
+1. [Alien](#alien)
 1. [Better Call Saul](#better-call-saul)
+1. [Jackie Brown](#jackie-brown)
+1. [Killing Eve](#killing-eve)
 1. [Ozark](#ozark)
 1. [Schitts Creek](#schitts-creek)
 1. [Orange Is The New Black](#orange-is-the-new-black)
-1. [Killing Eve](#killing-eve)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
 1. [Upload](#upload)
 1. [Stranger Things](#stranger-things)
-1. [Jackie Brown](#jackie-brown)
-1. [Alien](#alien)
 <!-- /TOC -->
+
+### Alien
+
+Alien is a 1979 science fiction horror film directed by Ridley Scott.
+
+![screenshot of title of alien. letters fade into view in segments.](/alien/img/title-reference.webp)
+
+View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
 
 ### Better Call Saul
 
-[Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series. It is a spin-off, prequel, and a sequel to [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad). Set primarily in the early to middle part of the 2000s in Albuquerque, New Mexico, the series follows Jimmy McGill (Bob Odenkirk), an earnest lawyer and former con artist, as he becomes an egocentric criminal defense attorney known as Saul Goodman.
+[Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series.
 
 ![screenshot Better Call Saul title](better-call-saul/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/rNWRoBO).
 
-#### Typography
+#### Implementation notes
 
-Two typefaces are used for the title of the TV series. The text “Better Call” uses [_Script1 Script Casual_](https://fontmeme.com/fonts/script1-script-casual-font/) in italics. The text “Saul” uses a cursive font that is very similar to [_Dancing Script_](https://fonts.google.com/specimen/Dancing+Script?preview.text_type=custom).
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](http://roboleary.net/animation/2023/05/15/a-slick-animation-better-call-saul-title-sequence.html) for more details.
 
-The credits use [VCR OSD Mono](https://www.dafont.com/vcr-osd-mono.font).
+### Jackie Brown
 
-#### How was this made?
+Jackie Brown is an American crime film written and directed by Quentin Tarantino.
 
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+![screenshot of title of jackie brown](/jackie-brown/img/title-reference.png)
 
-#### Optimizing animation
-
-The animation could be optimized further. The following could be done:
-
-1. At the beginning of the animation, the title is blurry and comes into focus. This is done by animating `filter:blur()`. It would probably be more performant to overlay a blurry version of the background, and animate the opacity on that instead.
-1. There is a separate animation timeline that moves a duplicate of the background image (Lady Liberity) to create some subtle movement. It may be more performant to turn this into a GIF, but for a large GIF the file size might be significant. This tradeoff may not be worth making.
-
-### Ozark
-
-[Ozark](<https://en.wikipedia.org/wiki/Ozark_(TV_series)>) is an American crime drama streaming television series created by Bill Dubuque and Mark Williams for Netflix. The series follows Marty and Wendy Byrde, a married couple who move their family to the Lake of the Ozarks to create a big money laundering operation for a Mexican drug cartel.
-
-This instance is based on Season 1 Episode 1.
-
-![screenshot Ozark title](ozark/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
-
-#### How was this made?
-
-I discuss it all in this article, [How to create a slick animation from Ozark (TV series title sequence))](https://www.roboleary.net/2022/01/22/ozark-animation.html)!
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
-
-### Schitts Creek
-
-[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
-
-![screenshot schitts creek](schitts-creek/gsap/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
-
-#### How was this made?
-
-I discuss it all in this article, [How to create a slick animation from Schitt's Creek (TV series title sequence)](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html)!
-
-I created 2 versions:
-1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
-1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
-
-### Orange Is The New Black
-
-[Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series created by Jenji Kohan for Netflix. The series is based on [Piper Kerman's memoir Orange Is the New Black: My Year in a Women's Prison (2010)](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black:_My_Year_in_a_Women%27s_Prison), about her experiences at FCI Danbury, a minimum-security federal prison.
-
-I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
-
-![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
-
-#### How was this made?
-
-The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
-
-#### Design decisions
-
-- The original typeface is _Damaged Guts_. I chose a free alternative called _CF Punk Fashion_ as a basis for making my own text. I converted the text to SVG paths and added more "damage" to get closer to the look of the original!
-- I chose to do the animation in CSS, but have it triggered by JavaScript. I did begin by using GSAP and noticed that the equivalent of `translateX(50%)` didn't work as expected. It works as expected in CSS. I don't know why!
-
-#### Attribution
-
-- [Photo](https://unsplash.com/photos/WWX2bPqP-z4) by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- [Door closing sound effect](https://freesound.org/people/TurtleLG/sounds/80449/) from Freesound.org.
+View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
 ### Killing Eve
 
-[Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series, produced in the United Kingdom for BBC America and BBC Three. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
+[Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
 
 ![screenshot Killing Eve title](killing-eve/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/full/gOwGojN).
 
-#### How was this made?
+#### Implementation notes
 
-I explain how in this article, [How to create a slick animation from Killing Eve (TV show title sequence)](https://www.roboleary.net/2020/12/24/title-sequences.html)!
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/2020/12/24/title-sequences.html) for more info.
 
 #### Attribution
 
@@ -137,6 +82,53 @@ The audio is sampled from:
 1. Killer Shangri-Lah by Pshycotic Beats.
 
 The audio is the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
+
+### Ozark
+
+[Ozark](<https://en.wikipedia.org/wiki/Ozark_(TV_series)>) is an American crime drama. The series follows Marty and Wendy Byrde, a married couple who move their family to the Lake of the Ozarks to create a big money laundering operation for a Mexican drug cartel.
+
+This instance is based on Season 1 Episode 1.
+
+![screenshot Ozark title](ozark/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
+
+#### Implementation notes
+
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/2022/01/22/ozark-animation.html) for more info.
+
+### Schitts Creek
+
+[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
+
+![screenshot schitts creek](schitts-creek/gsap/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
+
+#### Implementation notes
+
+I created 2 versions:
+1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
+1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
+
+You can read my [notes)](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html) for more info.
+
+### Orange Is The New Black
+
+[Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series.
+
+I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
+
+![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
+
+#### Implementation notes
+
+The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
+
+- The original typeface is _Damaged Guts_. I chose a free alternative called _CF Punk Fashion_ as a basis for making my own text. I converted the text to SVG paths and added more "damage" to get closer to the look of the original!
+- I chose to do the animation in CSS, but have it triggered by JavaScript. I did begin by using GSAP and noticed that the equivalent of `translateX(50%)` didn't work as expected. It works as expected in CSS. I don't know why!
 
 ### The Marvelous Mrs Maisel
 
@@ -152,11 +144,9 @@ This instance is the opening title from Episode 2 of Season 4
 
 View the [codepen](https://codepen.io/robjoeol/full/yLvopZe).
 
-#### How was this made?
+#### Implementation notes
 
-I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html)!
-
-It is a CSS animation.
+It is a CSS animation. You can my [notes](https://www.roboleary.net/2022/05/23/how-to-make-a-slick-animation-the-marvelous-mrs-maisel-title-sequence.html) for more info.
 
 #### Attribution
 
@@ -164,7 +154,7 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 ### Upload
 
-[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing. When a programmer Nathan Brown dies prematurely, he is uploaded to the very expensive Lakeview, but then finds himself under the thumb of his possessive, still-living girlfriend Ingrid.
+[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing.
 
 <img src="upload/img/screenshot.png"
 	alt="screenshot of Upload title sequence"
@@ -173,9 +163,9 @@ I use the font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font
 
 View the [codepen](https://codepen.io/robjoeol/full/PoQRgLG).
 
-#### How was this made?
+#### Implementation notes
 
-I explain how in this article, [How to create a slick CSS animation from The Marvelous Mrs Maisel (TV series title sequence)](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html)!
+It is a CSS animation. You can my [notes](https://www.roboleary.net/2022/06/06/how-to-make-a-slick-css-animation-upload-title-sequence.html) for more info!
 
 ### Stranger Things
 
@@ -185,34 +175,12 @@ I explain how in this article, [How to create a slick CSS animation from The Mar
 
 View the [codepen](https://codepen.io/robjoeol/pen/xxyNJWP).
 
-#### How was this made?
+#### Implementation notes
 
-I discuss it all in this article, [How to create a slick animation from Stranger Things](https://www.roboleary.net/animation/2023/05/30/how-to-make-a-slick-animation-stranger-things-title-sequence.html)!
-
-I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
+I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/animation/2023/05/30/how-to-make-a-slick-animation-stranger-things-title-sequence.html) for more info!
 
 #### Attribution
 
 The audio is sampled from Strangers Thing Theme by Kyle Dixon and Michael Stein.
 
 The audio is the property of the copyright holders. The samples used here are to provide commentary of how complementary the songs are with the title sequence. It is deemed to be fair usage. No copyright infringement is intended.
-
-### Jackie Brown
-
-Jackie Brown is an American crime film written and directed by Quentin Tarantino.
-
-![screenshot of title of jackie brown](/jackie-brown/img/title-reference.png)
-
-View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
-
-#### Attribution
-
-The original typeface is ITC Tiffany Heavy, which is a premium font by ITC. I used a free alternative typeface called [VI Vong Vang](https://www.whatfontis.com/FF_VI-Vong-Vang.font)
-
-### Alien
-
-Alien is a 1979 science fiction horror film directed by Ridley Scott.
-
-![screenshot of title of alien. letters fade into view in segments.](/alien/img/title-reference.webp)
-
-View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
