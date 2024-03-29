@@ -10,10 +10,13 @@
 
 body {
   margin: 0;
+  background-color: black;
 }
 
 .container {
   position: relative;
+
+  overflow: hidden;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -21,6 +24,7 @@ body {
   animation-delay: calc(var(--glitch-delay) - 0.2s);
   animation-duration: 0.2s;
   animation-name: darken-bg;
+  aspect-ratio: 1200 / 800;
 
   background-image: url("img/background.jpg");
   background-position: center;
