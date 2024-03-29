@@ -215,4 +215,4 @@ Alien is a 1979 science fiction horror film directed by Ridley Scott.
 
 ![screenshot of title of alien. letters fade into view in segments.](/alien/img/title-reference.webp)
 
-View the codepen (**ADD SOON**).
+View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
