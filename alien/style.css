@@ -27,11 +27,11 @@ body {
 
   background: black;
   background-image: url("img/bg.jpg");
-  background-size: 550%;
+  background-size: 500%;
   background-position: 10% 50%;
   background-repeat: no-repeat;
 
-  animation: bg-scroll 350s;
+  animation: bg-scroll 370s;
   animation-fill-mode: forwards;
 }
 

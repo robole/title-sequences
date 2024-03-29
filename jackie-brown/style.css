@@ -1,3 +1,4 @@
+/* stylelint-disable */
 :root {
   --text-color: hsl(44deg 98% 50%);
   --shadow-color: hsl(0deg 96% 27%);
@@ -61,11 +62,12 @@ h1 {
   mask-position: 100%;
   mask-size: 200% 100%;
 
-  text-shadow: 8px 0 0 var(--shadow-color), 6px 1px 0 var(--shadow-color),
-    7px 2px 0 var(--shadow-color), 8px 3px 0 var(--shadow-color),
-    0 1px 0 var(--shadow-color), 1px 2px 0 var(--shadow-color),
-    2px 3px 0 var(--shadow-color), 3px 4px 0 var(--shadow-color),
-    3px 5px 0 var(--shadow-color);
+  text-shadow: 
+    /*left side*/ -0.01em 0 var(--shadow-color),
+    -0.01em 0.005em var(--shadow-color), -0.02em 0.02em var(--shadow-color),
+    -0.025em 0.03em var(--shadow-color),
+    /* top side */ 0 -0.01em var(--shadow-color),
+    /* right side*/ 0.03em 0.03em var(--shadow-color);
 }
 
 h1 span:nth-of-type(1) {
