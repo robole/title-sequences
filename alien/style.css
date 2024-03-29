@@ -66,10 +66,10 @@ body {
 h1 {
   color: white;
   font-family: "HomepageBaukasten";
-  font-size: 3.75rem;
+  font-size: clamp(1.5rem, 6vw + 0.5rem, 6rem);
 
   margin: 0 10%;
-  margin-block-start: 2.5rem;
+  margin-block-start: 1.25rem;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
