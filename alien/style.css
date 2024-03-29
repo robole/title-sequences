@@ -4,9 +4,9 @@
   --text-color-initial: #08146d;
   --text-color-final: white;
 
-  --animation-delay-initial: 9s;
-  --animation-delay-interim: 3.5s;
-  --animation-duration: 3s;
+  --animation-delay-initial: 12.5s;
+  --animation-delay-interim: 4s;
+  --animation-duration: 3.75s;
 }
 
 @font-face {
@@ -24,9 +24,21 @@ body {
   width: 100%;
   height: 100dvh;
   margin: 0;
+
   background: black;
   background-image: url("img/bg.jpg");
-  background-size: cover;
+  background-size: 550%;
+  background-position: 10% 50%;
+  background-repeat: no-repeat;
+
+  animation: bg-scroll 350s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-scroll {
+  to {
+    background-position: 200% 50%;
+  }
 }
 
 h1 {
@@ -57,8 +69,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 11) +
-      0.5s
+    var(--animation-delay-initial) + (var(--animation-duration) * 10) +
+      (var(--animation-delay-interim) * 10) + 0.5s
   );
 }
 
@@ -74,7 +86,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + var(--animation-delay-interim)
+    var(--animation-delay-initial) + var(--animation-duration) +
+      var(--animation-delay-interim)
   );
 }
 
@@ -90,7 +103,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 6)
+    var(--animation-delay-initial) + (var(--animation-duration) * 5) +
+      (var(--animation-delay-interim) * 5)
   );
 }
 
@@ -111,7 +125,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 4)
+    var(--animation-delay-initial) + (var(--animation-duration) * 3) +
+      (var(--animation-delay-interim) * 3)
   );
 }
 
@@ -127,7 +142,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 9)
+    var(--animation-delay-initial) + (var(--animation-duration) * 8) +
+      (var(--animation-delay-interim) * 8)
   );
 }
 
@@ -159,7 +175,8 @@ h1 {
   animation: var(--animation-duration) linear reveal-bg;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 5)
+    var(--animation-delay-initial) + (var(--animation-duration) * 4) +
+      (var(--animation-delay-interim) * 4)
   );
 }
 
@@ -190,7 +207,8 @@ h1 {
   animation: var(--animation-duration) linear reveal-bg;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 11)
+    var(--animation-delay-initial) + (var(--animation-duration) * 10) +
+      (var(--animation-delay-interim) * 10)
   );
 }
 
@@ -212,7 +230,8 @@ h1 {
   animation: var(--animation-duration) linear reveal-bg;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 8)
+    var(--animation-delay-initial) + (var(--animation-duration) * 7) +
+      (var(--animation-delay-interim) * 7)
   );
 }
 
@@ -227,7 +246,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 10)
+    var(--animation-delay-initial) + (var(--animation-duration) * 9) +
+      (var(--animation-delay-interim) * 9)
   );
 }
 
@@ -244,7 +264,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 3)
+    var(--animation-delay-initial) + (var(--animation-duration) * 2) +
+      (var(--animation-delay-interim) * 2)
   );
 }
 
@@ -266,7 +287,8 @@ h1 {
   animation: var(--animation-duration) linear reveal;
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-delay-interim) * 7)
+    var(--animation-delay-initial) + (var(--animation-duration) * 6) +
+      (var(--animation-delay-interim) * 6)
   );
 }
 
