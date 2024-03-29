@@ -35,19 +35,31 @@ body {
   max-width: 1920px;
   aspect-ratio: 1920 / 1080;
 
-  background: black;
-  background-image: url("img/bg.jpg");
-  background-size: 500%;
-  background-position: 10% 50%;
-  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 
-  animation: bg-scroll 370s;
-  animation-fill-mode: forwards;
+  background: black;
+  background-image: url("img/bg.webp");
+  background-size: 200%;
+  background-position: 0% 50%;
+
+  animation-name: bg-scroll, fadeout;
+  animation-duration: 210s, 1s;
+  animation-timing-function: linear, ease-out;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 0s, 120s;
 }
 
 @keyframes bg-scroll {
   to {
     background-position: 200% 50%;
+  }
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
   }
 }
 
@@ -62,6 +74,25 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+}
+
+p {
+  color: var(--text-color-final);
+  font-family: Roboto, sans-serif;
+  font-size: clamp(1rem, 2vw + 0.25rem, 2.25rem);
+  place-self: center;
+  opacity: 0;
+
+  animation: show-credit 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes show-credit {
+  10%,
+  100% {
+    opacity: 1;
+  }
 }
 
 .letter {
