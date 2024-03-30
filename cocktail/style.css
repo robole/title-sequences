@@ -29,6 +29,11 @@
     drop-shadow(0 0 30px var(--ring-glow-color-outer));
 }
 
+@font-face {
+  font-family: "Gillies Gothic MN";
+  src: url("./gillies-gothic-mn-light.ttf");
+}
+
 body {
   height: 100dvh;
   margin: 0;
