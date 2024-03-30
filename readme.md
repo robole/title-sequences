@@ -21,18 +21,34 @@ The website is run by default on: <http://localhost:3000/>.
 So far, these are the title sequences:
 
 <!-- TOC -->
+1. [Schitts Creek](#schitts-creek)
 1. [Alien](#alien)
 1. [Better Call Saul](#better-call-saul)
 1. [Jackie Brown](#jackie-brown)
 1. [Killing Eve](#killing-eve)
 1. [Ozark](#ozark)
-1. [Schitts Creek](#schitts-creek)
-1. [Orange Is The New Black](#orange-is-the-new-black)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
 1. [Upload](#upload)
 1. [Stranger Things](#stranger-things)
 1. [Cocktail](#cocktail)
+1. [Orange Is The New Black](#orange-is-the-new-black)
 <!-- /TOC -->
+
+### Schitts Creek
+
+[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
+
+![screenshot schitts creek](schitts-creek/gsap/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
+
+#### Implementation notes
+
+I created 2 versions:
+1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
+1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
+
+You can read my [notes](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html) for more info.
 
 ### Alien
 
@@ -88,42 +104,9 @@ View the [codepen](https://codepen.io/robjoeol/full/yLVZbwQ).
 
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/2022/01/22/ozark-animation.html) for more info.
 
-### Schitts Creek
-
-[Schitt's Creek](https://en.wikipedia.org/wiki/Schitt's_Creek) is a Canadian sitcom television series created by Dan Levy and Eugene Levy, that aired from 2015 to 2020. The series follows the formerly wealthy Rose family's trials and tribulations.
-
-![screenshot schitts creek](schitts-creek/gsap/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/dypyEdJ).
-
-#### Implementation notes
-
-I created 2 versions:
-1. Using the [Greensock (GSAP)](https://greensock.com/) library that features the soundtrack. See [schitts-creek/gsap folder](schitts-creek/gsap) for code.
-1. A CSS version without the soundtrack. See [schitts-creek/css folder](schitts-creek/css) for code.
-
-You can read my [notes](https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html) for more info.
-
-### Orange Is The New Black
-
-[Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series.
-
-I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
-
-![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
-
-#### Implementation notes
-
-The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
-
-- The original typeface is _Damaged Guts_. I chose a free alternative called _CF Punk Fashion_ as a basis for making my own text. I converted the text to SVG paths and added more "damage" to get closer to the look of the original!
-- I chose to do the animation in CSS, but have it triggered by JavaScript. I did begin by using GSAP and noticed that the equivalent of `translateX(50%)` didn't work as expected. It works as expected in CSS. I don't know why!
-
 ### The Marvelous Mrs Maisel
 
-[The Marvelous Mrs. Maisel](https://en.wikipedia.org/wiki/The_Marvelous_Mrs._Maisel) is an American period comedy-drama television series. It is set in the late 1950s and early 1960s, it stars Rachel Brosnahan as Miriam "Midge" Maisel, a New York housewife who discovers she has a knack for stand-up comedy and pursues a career in it.
+[The Marvelous Mrs. Maisel](https://en.wikipedia.org/wiki/The_Marvelous_Mrs._Maisel) is an American period comedy-drama television series. It is set in the late 1950s.
 
 This instance is the opening title from Episode 2 of Season 4
 
@@ -141,7 +124,7 @@ It is a CSS animation. You can read my [notes](https://www.roboleary.net/2022/05
 
 ### Upload
 
-[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series created by Greg Daniels. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing.
+[Upload](<https://en.wikipedia.org/wiki/Upload_(TV_series)>) is an American science fiction comedy-drama television series. The story takes place in 2033, when humans can "upload" themselves into a virtual afterlife of their choosing.
 
 <img src="upload/img/screenshot.png"
 	alt="screenshot of Upload title sequence"
@@ -156,7 +139,7 @@ It is a CSS animation. You can my [notes](https://www.roboleary.net/2022/06/06/h
 
 ### Stranger Things
 
-[Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things) is an American science fiction horror drama television series created by the Duffer Brothers. The story centers on a number of mysteries and supernatural events occurring in a small town and their impact on an ensemble of child and adult characters.
+[Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things) is an American science fiction horror drama television series.
 
 ![screenshot of title of stranger things](/stranger-things/img/title-reference.png)
 
@@ -172,9 +155,28 @@ I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 ![screenshot of title of cocktail recreation](/cocktail/img/result.png)
 
+View the [codepen](https://codepen.io/robjoeol/pen/WNWZBKx).
+
 #### Implementation notes
 
 This is a CSS animation.
+
+### Orange Is The New Black
+
+[Orange Is the New Black](https://en.wikipedia.org/wiki/Orange_Is_the_New_Black) is an American comedy-drama television series.
+
+I took the final sequence in the [opening title](https://www.youtube.com/watch?v=fBITGyJynfA).
+
+![screenshot Orange Is The New Black](orange-is-the-new-black/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/full/VwKLPRR).
+
+#### Implementation notes
+
+The animation is a CSS animation, but uses JavaScript to toggle a class to trigger the animation.
+
+- The original typeface is _Damaged Guts_. I chose a free alternative called _CF Punk Fashion_ as a basis for making my own text. I converted the text to SVG paths and added more "damage" to get closer to the look of the original!
+- I chose to do the animation in CSS, but have it triggered by JavaScript. I did begin by using GSAP and noticed that the equivalent of `translateX(50%)` didn't work as expected. It works as expected in CSS. I don't know why!
 
 ## Attribution and disclaimer
 
