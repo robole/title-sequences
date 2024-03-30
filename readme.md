@@ -31,6 +31,7 @@ So far, these are the title sequences:
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
 1. [Upload](#upload)
 1. [Stranger Things](#stranger-things)
+1. [Cocktail](#cocktail)
 <!-- /TOC -->
 
 ### Alien
@@ -165,9 +166,21 @@ View the [codepen](https://codepen.io/robjoeol/pen/xxyNJWP).
 
 I used the [Greensock (GSAP)](https://greensock.com/) library for the animation. You can read my [notes](https://www.roboleary.net/animation/2023/05/30/how-to-make-a-slick-animation-stranger-things-title-sequence.html) for more info!
 
+### Cocktail
+
+[Cocktail](https://en.wikipedia.org/wiki/Cocktail_(1988_film)) is a 1988 American romantic comedy-drama film starring Tom Cruise.
+
+![screenshot of title of cocktail recreation](/cocktail/img/result.png)
+
+#### Implementation notes
+
+This is a CSS animation.
+
 ## Attribution and disclaimer
 
-All fonts used are free to use. The font [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/) used for The Marvelous Mrs Maisel title is free for personal use only.
+All fonts used are free to use. Some are free only for personal use including:
+- [Fontdinerdotcom](https://fontmeme.com/fonts/fontdinerdotcom-font/) used for The Marvelous Mrs Maisel title,
+- [ITC Benguiat](https://www.fontreach.com/itc-benguiat-font-free-download/) used for Stranger Things.
 
 I have taken some clips from songs to accompany some of the titles. The songs are the property of the copyright holders. Samples are used here as a commentary of how well-chosen the songs are for the title sequence. It is deemed to be fair usage. No copyright infringement is intended. Here is a list of songs sampled:
 - For Killing Eve:

@@ -1,7 +1,6 @@
 # Todo
 
 1. https://www.artofthetitle.com/title/cocktail/
-1. https://www.artofthetitle.com/title/the-dead-zone/#
 1. https://www.artofthetitle.com/title/north-by-northwest/#
 1. https://www.artofthetitle.com/title/home-alone/
 1. https://www.artofthetitle.com/title/lady-in-a-cage/
