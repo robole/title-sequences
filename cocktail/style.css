@@ -1,0 +1,26 @@
+/* stylelint-disable */
+body {
+  display: grid;
+  background-color: black;
+  place-items: center;
+}
+
+h1 {
+  --glow-color-inner: hsl(209, 72%, 85%);
+  --glow-color: hsl(204, 97%, 56%);
+  --glow-color-outer: hsl(204, 97%, 36%);
+
+  color: hsl(212, 72%, 90%);
+  font-family: "Gillies Gothic MN", cursive;
+  font-size: 10rem;
+
+  rotate: -8deg;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3), 1px 0 rgba(0, 0, 0, 0.3),
+    -1px 0 rgba(0, 0, 0, 0.3), 0 0 5px var(--glow-color-inner),
+    0 0 10px var(--glow-color-inner), 0 0 15px var(--glow-color),
+    0 0 20px var(--glow-color), 0 0 25px var(--glow-color),
+    0 0 30px var(--glow-color), 0 0 35px var(--glow-color),
+    0 0 40px var(--glow-color), 0 0 50px var(--glow-color),
+    0 0 60px var(--glow-color-outer), 0 0 70px var(--glow-color-outer),
+    0 0 80px var(--glow-color-outer);
+}
