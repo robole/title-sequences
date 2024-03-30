@@ -1,26 +1,149 @@
 /* stylelint-disable */
+:root {
+  --animation-duration: 500ms;
+  --delay-duration: 4s;
+
+  --text-glow-color-inner: hsl(203, 100%, 48%);
+  --text-glow-color: hsl(211, 100%, 40%);
+  --text-glow-color-outer: hsl(216, 100%, 17%);
+
+  --text-off-shadow: 1px 0 10px var(--text-glow-color-inner),
+    1px 0 20px var(--text-glow-color-inner);
+  --text-on-shadow: -2px 0 10px rgba(0, 0, 0, 0.4),
+    1px 0 10px var(--text-glow-color-inner),
+    1px 0 20px var(--text-glow-color-inner),
+    1px 0 30px var(--text-glow-color-inner),
+    1px 0 40px var(--text-glow-color-inner), 0 0 20px var(--text-glow-color),
+    0 0 40px var(--text-glow-color), 0 0 50px var(--text-glow-color),
+    0 0 70px var(--text-glow-color), 0 0 80px var(--text-glow-color),
+    0 0 90px var(--text-glow-color-outer),
+    0 0 100px var(--text-glow-color-outer),
+    0 0 140px var(--text-glow-color-outer);
+
+  --ring-glow-color: hsla(300, 97%, 60%);
+  --ring-glow-color-outer: rgba(252, 54, 252, 0.5);
+
+  --ring-on-shadow: drop-shadow(0 0 10px var(--ring-glow-color))
+    drop-shadow(0 0 20px var(--ring-glow-color))
+    drop-shadow(0 0 30px var(--ring-glow-color))
+    drop-shadow(0 0 30px var(--ring-glow-color-outer));
+}
+
 body {
+  height: 100dvh;
+  margin: 0;
+
   display: grid;
   background-color: black;
   place-items: center;
 }
 
 h1 {
-  --glow-color-inner: hsl(209, 72%, 85%);
-  --glow-color: hsl(204, 97%, 56%);
-  --glow-color-outer: hsl(204, 97%, 36%);
+  position: relative;
 
-  color: hsl(212, 72%, 90%);
+  color: hsl(207, 84%, 80%);
+
   font-family: "Gillies Gothic MN", cursive;
   font-size: 10rem;
+  font-weight: 200;
+  background-color: black;
 
-  rotate: -8deg;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3), 1px 0 rgba(0, 0, 0, 0.3),
-    -1px 0 rgba(0, 0, 0, 0.3), 0 0 5px var(--glow-color-inner),
-    0 0 10px var(--glow-color-inner), 0 0 15px var(--glow-color),
-    0 0 20px var(--glow-color), 0 0 25px var(--glow-color),
-    0 0 30px var(--glow-color), 0 0 35px var(--glow-color),
-    0 0 40px var(--glow-color), 0 0 50px var(--glow-color),
-    0 0 60px var(--glow-color-outer), 0 0 70px var(--glow-color-outer),
-    0 0 80px var(--glow-color-outer);
+  rotate: -10deg;
+  text-shadow: var(--text-off-shadow);
+
+  opacity: 0.3;
+
+  /* animation-name: on-text, off-text;
+  animation-duration: var(--animation-duration), var(--animation-duration);
+  animation-delay: 0s, var(--delay-duration);
+  animation-timing-function: ease-in, ease-out;
+  animation-fill-mode: forwards, forwards;
+  animation-iteration-count: 1, 1; */
+
+  animation-name: on-text;
+  animation-duration: var(--animation-duration);
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes on-text {
+  10% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    text-shadow: var(--text-on-shadow);
+  }
+}
+
+@keyframes off-text {
+  90% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    text-shadow: var(--text-off-shadow);
+  }
+}
+
+h1::before {
+  position: absolute;
+  top: -40%;
+  left: 20%;
+
+  display: inline-block;
+  content: "";
+
+  border-radius: 50%;
+  width: 70%;
+  aspect-ratio: 1/1;
+  z-index: -1;
+
+  border: 4px solid hsla(300, 97%, 95%);
+
+  /* animation-name: on-ring, off-ring;
+  animation-duration: var(--animation-duration), var(--animation-duration);
+  animation-delay: 0s, var(--delay-duration);
+  animation-timing-function: ease-in, ease-out;
+  animation-fill-mode: forwards, forwards;
+  animation-iteration-count: 1, 1; */
+
+  animation-name: on-ring;
+  animation-duration: var(--animation-duration);
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes on-ring {
+  10% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    filter: var(--ring-on-shadow);
+  }
+}
+
+@keyframes off-ring {
+  90% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    filter: none;
+  }
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
 }
