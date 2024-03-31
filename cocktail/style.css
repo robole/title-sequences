@@ -49,7 +49,7 @@ h1 {
   color: hsl(207, 84%, 80%);
 
   font-family: "Gillies Gothic MN", cursive;
-  font-size: 10rem;
+  font-size: clamp(6rem, 8vw + 2.5rem, 12rem);
   font-weight: 200;
   background-color: black;
 
