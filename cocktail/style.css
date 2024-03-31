@@ -32,6 +32,7 @@
 @font-face {
   font-family: "Gillies Gothic MN";
   src: url("./gillies-gothic-mn-light.ttf");
+  font-display: block;
 }
 
 body {
@@ -43,6 +44,9 @@ body {
   place-items: center;
 }
 
+/*
+<link rel="preload" as="font" href="https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-mn-light.ttf">
+*/
 h1 {
   position: relative;
 
