@@ -1,0 +1,195 @@
+/* stylelint-disable */
+
+:root {
+  --bg-color: green;
+  --line-color: blue;
+}
+
+@font-face {
+  font-family: "Franklin Gothic";
+  src: url("./franklin-gothic.ttf");
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  perspective: 300px;
+
+  background-color: white;
+}
+
+.title {
+  position: relative;
+  top: 0;
+  width: 170%;
+  aspect-ratio: 3 / 4;
+  background-color: var(--bg-color);
+
+  transform: translateZ(-8rem) translate(-10rem, -20rem) rotateY(6deg)
+    rotate(-24deg) skewX(-24deg);
+  transform-style: preserve-3d;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: white;
+  font-size: 7rem;
+  font-family: "Franklin Gothic", sans-serif;
+
+  translate: 0;
+
+  animation: scroll 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  to {
+    translate: 0 -1000%;
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: var(--line-color);
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 3px;
+
+  transform-origin: 100% 0;
+
+  /* 
+	transform: scaleX(0);
+	animation: grow 3s;
+  animation-iteration-count: infinite; */
+}
+
+.horizontal-line:nth-of-type(2) {
+  top: 6%;
+}
+
+.horizontal-line:nth-of-type(3) {
+  top: 7.5%;
+}
+
+.horizontal-line:nth-of-type(4) {
+  top: 13%;
+}
+
+.horizontal-line:nth-of-type(5) {
+  top: 18%;
+}
+
+.horizontal-line:nth-of-type(6) {
+  top: 19.5%;
+}
+
+.horizontal-line:nth-of-type(7) {
+  top: 25%;
+}
+
+.horizontal-line:nth-of-type(8) {
+  top: 30%;
+}
+
+.horizontal-line:nth-of-type(9) {
+  top: 31.5%;
+}
+
+.horizontal-line:nth-of-type(10) {
+  top: 37%;
+}
+
+.horizontal-line:nth-of-type(11) {
+  top: 42%;
+}
+
+.horizontal-line:nth-of-type(12) {
+  top: 43.5%;
+}
+
+.horizontal-line:nth-of-type(13) {
+  top: 48.5%;
+}
+
+.horizontal-line:nth-of-type(14) {
+  top: 53.5%;
+}
+
+.horizontal-line:nth-of-type(15) {
+  top: 55%;
+}
+
+.horizontal-line:nth-of-type(16) {
+  top: 60%;
+}
+
+.horizontal-line:nth-of-type(17) {
+  top: 65%;
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.vertical-line {
+  height: 100%;
+  width: 3px;
+
+  background-color: red;
+}
+
+div:nth-of-type(19) {
+  left: 10%;
+}
+
+div:nth-of-type(20) {
+  left: 20%;
+}
+
+div:nth-of-type(21) {
+  left: 30%;
+}
+
+div:nth-of-type(22) {
+  left: 40%;
+}
+
+div:nth-of-type(23) {
+  left: 40%;
+}
+
+div:nth-of-type(24) {
+  left: 40%;
+}
+
+div:nth-of-type(25) {
+  left: 50%;
+}
+
+div:nth-of-type(26) {
+  left: 50%;
+}
+
+div:nth-of-type(27) {
+  left: 60%;
+}
+
+div:nth-of-type(28) {
+  left: 70%;
+}
+
+div:nth-of-type(29) {
+  left: 80%;
+}
+
+div:nth-of-type(30) {
+  left: 90%;
+}
