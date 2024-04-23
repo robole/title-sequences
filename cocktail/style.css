@@ -1,4 +1,10 @@
 /* stylelint-disable */
+/*
+
+Part of Title Sequences collection:
+https://codepen.io/collection/nNmwgP
+
+*/
 :root {
   --animation-duration: 500ms;
   --delay-duration: 4s;
@@ -29,9 +35,11 @@
     drop-shadow(0 0 30px var(--ring-glow-color-outer));
 }
 
+/* https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-mn-light.ttf
+*/
 @font-face {
-  font-family: "Gillies Gothic MN";
-  src: url("./gillies-gothic-mn-light.ttf");
+  font-family: "Gillies Gothic Light";
+  src: url("./gillies-gothic-light.otf");
   font-display: block;
 }
 
@@ -44,15 +52,12 @@ body {
   place-items: center;
 }
 
-/*
-<link rel="preload" as="font" href="https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-mn-light.ttf">
-*/
 h1 {
   position: relative;
 
   color: hsl(207, 84%, 80%);
 
-  font-family: "Gillies Gothic MN", cursive;
+  font-family: "Gillies Gothic Light", cursive;
   font-size: clamp(6rem, 8vw + 2.5rem, 12rem);
   font-weight: 200;
   background-color: black;
@@ -94,7 +99,7 @@ h1 {
 
 h1::before {
   position: absolute;
-  top: -40%;
+  top: -16%;
   left: 20%;
 
   display: inline-block;
