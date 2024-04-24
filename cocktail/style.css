@@ -9,33 +9,14 @@ https://codepen.io/collection/nNmwgP
   --animation-duration: 500ms;
   --delay-duration: 4s;
 
-  --text-glow-color-inner: hsl(203, 100%, 48%);
   --text-glow-color: hsl(211, 100%, 40%);
   --text-glow-color-outer: hsl(216, 100%, 17%);
 
-  --text-off-shadow: 1px 0 10px var(--text-glow-color-inner),
-    1px 0 20px var(--text-glow-color-inner);
-  --text-on-shadow: -2px 0 10px rgba(0, 0, 0, 0.4),
-    1px 0 10px var(--text-glow-color-inner),
-    1px 0 20px var(--text-glow-color-inner),
-    1px 0 30px var(--text-glow-color-inner),
-    1px 0 40px var(--text-glow-color-inner), 0 0 20px var(--text-glow-color),
-    0 0 40px var(--text-glow-color), 0 0 50px var(--text-glow-color),
-    0 0 70px var(--text-glow-color), 0 0 80px var(--text-glow-color),
-    0 0 90px var(--text-glow-color-outer),
-    0 0 100px var(--text-glow-color-outer),
-    0 0 140px var(--text-glow-color-outer);
-
   --ring-glow-color: hsla(300, 97%, 60%);
   --ring-glow-color-outer: rgba(252, 54, 252, 0.5);
-
-  --ring-on-shadow: drop-shadow(0 0 10px var(--ring-glow-color))
-    drop-shadow(0 0 20px var(--ring-glow-color))
-    drop-shadow(0 0 30px var(--ring-glow-color))
-    drop-shadow(0 0 30px var(--ring-glow-color-outer));
 }
 
-/* https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-mn-light.ttf
+/* https://raw.githubusercontent.com/robole/title-sequences/main/cocktail/gillies-gothic-light.otf
 */
 @font-face {
   font-family: "Gillies Gothic Light";
@@ -63,37 +44,41 @@ h1 {
   background-color: black;
 
   rotate: -10deg;
-  text-shadow: var(--text-off-shadow);
 
-  opacity: 0.3;
+  opacity: 0;
 
   animation-name: on-text, off-text;
   animation-duration: var(--animation-duration), var(--animation-duration);
   animation-delay: 0s, var(--delay-duration);
   animation-timing-function: ease-in, ease-out;
-  animation-fill-mode: forwards, forwards;
+  animation-fill-mode: forwards;
   animation-iteration-count: 1, 1;
 }
 
 @keyframes on-text {
-  10% {
+  50% {
     opacity: 1;
   }
 
   to {
     opacity: 1;
-    text-shadow: var(--text-on-shadow);
+    text-shadow: -2px 0 10px rgba(0, 0, 0, 0.4), 0 0 5px var(--text-glow-color),
+      0 0 10px var(--text-glow-color), 0 0 15px var(--text-glow-color),
+      0 0 20px var(--text-glow-color), 0 0 25px var(--text-glow-color),
+      0 0 30px var(--text-glow-color), 0 0 35px var(--text-glow-color-outer),
+      0 0 50px var(--text-glow-color-outer),
+      0 0 60px var(--text-glow-color-outer);
   }
 }
 
 @keyframes off-text {
-  90% {
+  70% {
     opacity: 0;
   }
 
   to {
     opacity: 0;
-    text-shadow: var(--text-off-shadow);
+    text-shadow: none;
   }
 }
 
@@ -121,23 +106,17 @@ h1::before {
 }
 
 @keyframes on-ring {
-  10% {
-    opacity: 1;
-  }
-
   to {
-    opacity: 1;
-    filter: var(--ring-on-shadow);
+    filter: drop-shadow(0 0 5px var(--ring-glow-color))
+      drop-shadow(0 0 10px var(--ring-glow-color))
+      drop-shadow(0 0 15px var(--ring-glow-color))
+      drop-shadow(0 0 30px var(--ring-glow-color-outer))
+      drop-shadow(0 0 40px var(--ring-glow-color-outer));
   }
 }
 
 @keyframes off-ring {
-  90% {
-    opacity: 1;
-  }
-
   to {
-    opacity: 1;
     filter: none;
   }
 }
