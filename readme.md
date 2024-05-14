@@ -153,7 +153,7 @@ I used the [Greensock (GSAP)](https://greensock.com/) library for the animation.
 
 [Cocktail](https://en.wikipedia.org/wiki/Cocktail_(1988_film)) is a 1988 American romantic comedy-drama film starring Tom Cruise.
 
-![screenshot of title of cocktail recreation](/cocktail/img/result.png)
+![screenshot of title of cocktail recreation](/cocktail/img/result.webp)
 
 View the [codepen](https://codepen.io/robjoeol/pen/WNWZBKx).
 
