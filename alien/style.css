@@ -4,9 +4,9 @@
   --text-color-initial: #08146d;
   --text-color-final: white;
 
-  --animation-delay-initial: 12.5s;
-  --animation-delay-interim: 4s;
-  --animation-duration: 3.75s;
+  --animation-delay-title-reveal: 12.5s;
+  --animation-delay-segment: 4s;
+  --animation-duration-segment: 3.75s;
 }
 
 @font-face {
@@ -112,7 +112,7 @@ p {
 
   background-color: transparent;
 
-  animation: reveal-bg-color var(--animation-duration);
+  animation: reveal-bg-color var(--animation-duration-segment);
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -128,8 +128,9 @@ p {
 
   animation-fill-mode: forwards;
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 10) +
-      (var(--animation-delay-interim) * 10) + 0.5s
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 10) +
+      (var(--animation-delay-segment) * 10) + 0.5s
   );
 }
 
@@ -138,8 +139,9 @@ p {
   clip-path: polygon(38% 18.6%, 63% 18.6%, 99.08% 85%, 76% 85%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 5) +
-      (var(--animation-delay-interim) * 5)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 5) +
+      (var(--animation-delay-segment) * 5)
   );
 }
 
@@ -148,8 +150,8 @@ p {
   clip-path: polygon(37.86% 18.6%, 62% 18.6%, 23.54% 85%, 0% 85%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + var(--animation-duration) +
-      var(--animation-delay-interim)
+    var(--animation-delay-title-reveal) + var(--animation-duration-segment) +
+      var(--animation-delay-segment)
   );
 }
 
@@ -160,8 +162,9 @@ p {
   clip-path: polygon(8.24% 18.07%, 40% 18.1%, 40% 84%, 7.82% 84%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 3) +
-      (var(--animation-delay-interim) * 3)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 3) +
+      (var(--animation-delay-segment) * 3)
   );
 }
 
@@ -170,17 +173,18 @@ p {
   clip-path: polygon(39% 69%, 100% 69%, 100% 84%, 39% 84%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 8) +
-      (var(--animation-delay-interim) * 8)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 8) +
+      (var(--animation-delay-segment) * 8)
   );
 }
 
 /* letter I */
 .letter:nth-of-type(3) {
-  animation: reveal-color var(--animation-duration);
+  animation: reveal-color var(--animation-duration-segment);
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  animation-delay: var(--animation-delay-initial);
+  animation-delay: var(--animation-delay-title-reveal);
 }
 
 /* letter E */
@@ -196,8 +200,9 @@ p {
   height: 67%;
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 4) +
-      (var(--animation-delay-interim) * 4)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 4) +
+      (var(--animation-delay-segment) * 4)
   );
 }
 
@@ -224,8 +229,9 @@ p {
   height: 15.8%;
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 10) +
-      (var(--animation-delay-interim) * 10)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 10) +
+      (var(--animation-delay-segment) * 10)
   );
 }
 
@@ -244,8 +250,9 @@ p {
 .letter:nth-of-type(4) i:nth-of-type(2),
 .letter:nth-of-type(4) i:nth-of-type(4) {
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 7) +
-      (var(--animation-delay-interim) * 7)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 7) +
+      (var(--animation-delay-segment) * 7)
   );
 }
 
@@ -259,8 +266,9 @@ p {
   clip-path: polygon(67% 18.01%, 92% 18.05%, 92% 83.86%, 67% 83.87%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 6) +
-      (var(--animation-delay-interim) * 6)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 6) +
+      (var(--animation-delay-segment) * 6)
   );
 }
 
@@ -268,8 +276,9 @@ p {
   clip-path: polygon(7% 18%, 31% 18%, 31% 84%, 10% 84%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 9) +
-      (var(--animation-delay-interim) * 9)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 9) +
+      (var(--animation-delay-segment) * 9)
   );
 }
 
@@ -278,8 +287,9 @@ p {
   clip-path: polygon(6% 19.14%, 32% 19.18%, 93% 83%, 68% 83%);
 
   animation-delay: calc(
-    var(--animation-delay-initial) + (var(--animation-duration) * 2) +
-      (var(--animation-delay-interim) * 2)
+    var(--animation-delay-title-reveal) +
+      (var(--animation-duration-segment) * 2) +
+      (var(--animation-delay-segment) * 2)
   );
 }
 
@@ -307,7 +317,6 @@ p {
   33%,
   100% {
     background-color: var(--text-color-initial);
-    opacity: 1;
   }
 
   100% {
