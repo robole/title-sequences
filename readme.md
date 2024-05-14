@@ -25,6 +25,7 @@ So far, these are the title sequences:
 1. [Alien](#alien)
 1. [Better Call Saul](#better-call-saul)
 1. [Jackie Brown](#jackie-brown)
+1. [Implementation notes](#implementation-notes)
 1. [Killing Eve](#killing-eve)
 1. [Ozark](#ozark)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
@@ -58,6 +59,10 @@ Alien is a 1979 science fiction horror film directed by Ridley Scott.
 
 View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
 
+#### Implementation notes
+
+This is a CSS animation.
+
 ### Better Call Saul
 
 [Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series.
@@ -77,6 +82,10 @@ Jackie Brown is an American crime film written and directed by Quentin Tarantino
 ![screenshot of title of jackie brown](/jackie-brown/img/title-reference.png)
 
 View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
+
+### Implementation notes
+
+This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/15/jackie-brown-title-sequence.html) on how I made it.
 
 ### Killing Eve
 
@@ -159,7 +168,7 @@ View the [codepen](https://codepen.io/robjoeol/pen/WNWZBKx).
 
 #### Implementation notes
 
-This is a CSS animation.
+This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/24/cocktail-title-sequence.html) on how I made it.
 
 ### Orange Is The New Black
 
