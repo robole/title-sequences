@@ -82,6 +82,10 @@ Jackie Brown is an American crime film written and directed by Quentin Tarantino
 
 View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
+#### Implementation notes
+
+It is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/15/jackie-brown-title-sequence.html) about the design and implementation.
+
 ### Killing Eve
 
 [Killing Eve](https://en.wikipedia.org/wiki/Killing_Eve) is a British spy thriller television series. The series follows Eve Polastri (Sandra Oh), a British intelligence investigator tasked with capturing psychopathic assassin Villanelle (Jodie Comer).
@@ -163,7 +167,7 @@ View the [codepen](https://codepen.io/robjoeol/pen/WNWZBKx).
 
 #### Implementation notes
 
-This is a CSS animation.
+This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/24/cocktail-title-sequence.html) on the implementation.
 
 ### Orange Is The New Black
 
