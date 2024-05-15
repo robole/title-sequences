@@ -25,7 +25,6 @@ So far, these are the title sequences:
 1. [Alien](#alien)
 1. [Better Call Saul](#better-call-saul)
 1. [Jackie Brown](#jackie-brown)
-1. [Implementation notes](#implementation-notes)
 1. [Killing Eve](#killing-eve)
 1. [Ozark](#ozark)
 1. [The Marvelous Mrs Maisel](#the-marvelous-mrs-maisel)
@@ -83,7 +82,7 @@ Jackie Brown is an American crime film written and directed by Quentin Tarantino
 
 View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
-### Implementation notes
+#### Implementation notes
 
 This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/15/jackie-brown-title-sequence.html) on how I made it.
 
