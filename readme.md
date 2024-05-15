@@ -58,6 +58,10 @@ Alien is a 1979 science fiction horror film directed by Ridley Scott.
 
 View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
 
+#### Implementation notes
+
+It is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/05/15/alien-title-sequence.html) about the design and implementation.
+
 ### Better Call Saul
 
 [Better Call Saul](https://en.wikipedia.org/wiki/Better_Call_Saul) is an American crime drama television series.
