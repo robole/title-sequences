@@ -209,6 +209,8 @@ North by Northwest is a 1959 American spy thriller film produced and directed by
 
 ![A screenshot of the north by northwest title card. A green background has a criss-cross of blue lines that mimicks the exterior of a skyscraper. The title 'north by northwest' is in the center.](/north-by-northwest/img/screenshot.png)
 
+View the [codepen](https://codepen.io/robjoeol/pen/RwmOeyq).
+
 #### Implementation notes
 
 This is a CSS animation.
