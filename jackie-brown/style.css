@@ -52,12 +52,12 @@ h1 {
   margin-inline-start: 10%;
 
   mask-image: linear-gradient(
-    to left,
-    transparent 0% 48.5%,
-    rgb(0 0 0 / 30%) 48.5%,
-    transparent 49%,
+    to right,
+    black 0% 50%,
     rgb(0 0 0 / 10%) 50%,
-    black 50% 100%
+    transparent 51%,
+    rgb(0 0 0 / 30%) 51.5%,
+    transparent 51.5% 100%
   );
   mask-position: 100%;
   mask-size: 200% 100%;

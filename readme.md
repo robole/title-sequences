@@ -32,6 +32,7 @@ So far, these are the title sequences:
 1. [Stranger Things](#stranger-things)
 1. [Cocktail](#cocktail)
 1. [Orange Is The New Black](#orange-is-the-new-black)
+1. [North by Northwest](#north-by-northwest)
 <!-- /TOC -->
 
 ### Schitts Creek
@@ -60,7 +61,7 @@ View the [codepen](https://codepen.io/robjoeol/full/ZEZXabR).
 
 #### Implementation notes
 
-This is a CSS animation.
+It is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/05/15/alien-title-sequence.html) about the design and implementation.
 
 ### Better Call Saul
 
@@ -84,7 +85,7 @@ View the [codepen](https://codepen.io/robjoeol/pen/BaEdVwj).
 
 #### Implementation notes
 
-This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/15/jackie-brown-title-sequence.html) on how I made it.
+It is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/15/jackie-brown-title-sequence.html) about the design and implementation.
 
 ### Killing Eve
 
@@ -167,7 +168,7 @@ View the [codepen](https://codepen.io/robjoeol/pen/WNWZBKx).
 
 #### Implementation notes
 
-This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/24/cocktail-title-sequence.html) on how I made it.
+This is a CSS animation. You can read [my notes](https://www.roboleary.net/2024/04/24/cocktail-title-sequence.html) on the implementation.
 
 ### Orange Is The New Black
 
@@ -201,3 +202,13 @@ I have taken some clips from songs to accompany some of the titles. The songs ar
 	- Main Theme by Maribeth Solomon
 - For Stranger Things:
 	- The theme song is by Kyle Dixon and Michael Stein.
+
+### North by Northwest
+
+North by Northwest is a 1959 American spy thriller film produced and directed by Alfred Hitchcock,
+
+![A screenshot of the north by northwest title card. A green background has a criss-cross of blue lines that mimicks the exterior of a skyscraper. The title 'north by northwest' is in the center.](/north-by-northwest/img/screenshot.png)
+
+#### Implementation notes
+
+This is a CSS animation.
