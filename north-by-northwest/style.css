@@ -12,9 +12,9 @@
   --vertical-gap: 3%;
 
   --text-x-position: 50dvw;
-  --text-y-position-up: -24dvh;
-  --text-y-position-down: 124dvh;
-  --text-y-position-inview: 50dvh;
+  --text-y-position-up: -30dvh;
+  --text-y-position-down: 130dvh;
+  --text-y-position-inview: clamp(40dvw, 10dvw + 18rem, 60dvw);
 
   --credit-reveal-animation-duration: 1.25s;
   --credit-reveal-beginning: 8s;
@@ -58,11 +58,8 @@ body {
 .credit {
   position: absolute;
   color: white;
-  font-size: clamp(1rem, 13vw + 1.1rem, 12rem);
+  font-size: clamp(1rem, 13dvw + 1.1rem, 12rem);
   font-family: "Franklin Gothic", sans-serif;
-
-  /*TODO: remove later */
-  display: none;
 
   animation-name: introduce-credit, exit-credit-up;
   animation-duration: var(--credit-reveal-animation-duration);
@@ -72,34 +69,43 @@ body {
   animation-fill-mode: forwards;
 }
 
-.credit:nth-of-type(1) {
-  /* translate: var(--text-x-position) var(--text-y-position-down); */
+div.credit:nth-of-type(1) {
+  translate: var(--text-x-position) var(--text-y-position-up);
+
+  animation-name: introduce-credit, exit-credit-down;
+}
+
+/* positioned above */
+div.credit:nth-of-type(2) {
+  --credit-reveal-beginning: 11.5s;
 
   /*TODO: remove later */
   display: block;
 
   translate: var(--text-x-position) var(--text-y-position-down);
+  font-size: clamp(1rem, 8dvw + 1.1rem, 12rem);
 }
 
-.credit:nth-of-type(2) {
-  --credit-reveal-beginning: 11.5s;
-  --text-x-position: 5rem;
-
-  /*TODO: remove later */
+/* positioned above*/
+div.credit:nth-of-type(3) {
+  --credit-reveal-beginning: 15.5s;
   display: block;
 
+  font-size: clamp(1rem, 6dvw + 0.6rem, 12rem);
   translate: var(--text-x-position) var(--text-y-position-up);
 
   animation-name: introduce-credit, exit-credit-down;
 }
 
 .title-credit {
-  --credit-reveal-beginning: 15.5s;
-  --text-y-position-inview: 30dvh;
+  --credit-reveal-beginning: 19.5s;
 
   width: 50%;
+  top: -5%;
 
   translate: var(--text-x-position) var(--text-y-position-down);
+
+  animation-name: introduce-credit, exit-credit-up;
 }
 
 @media screen and (min-width: 600px) {
