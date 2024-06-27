@@ -78,25 +78,17 @@ div.credit:nth-of-type(1) {
   translate: var(--text-x-position) var(--text-y-position-up);
 
   animation-name: introduce-credit, exit-credit-down;
-
-  /* animation: none; */
 }
 
-/* positioned above */
 div.credit:nth-of-type(2) {
   --credit-reveal-beginning: 11.5s;
-
-  /*TODO: remove later */
-  display: block;
 
   translate: var(--text-x-position) var(--text-y-position-down);
   font-size: var(--font-size-md);
 }
 
-/* positioned above*/
 div.credit:nth-of-type(3) {
   --credit-reveal-beginning: 15.5s;
-  display: block;
 
   font-size: var(--font-size-sm);
   translate: var(--text-x-position) var(--text-y-position-up);
@@ -137,8 +129,8 @@ div.credit:nth-of-type(3) {
 
 @media screen and (min-width: 800px) {
   :root {
-    --text-y-position-up: -40dvh;
-    --text-y-position-down: 240dvh;
+    --text-y-position-up: -60dvh;
+    --text-y-position-down: 260dvh;
     --text-y-position-inview: clamp(60dvw, 30dvw + 28rem, 80dvw);
   }
 
@@ -155,8 +147,9 @@ div.credit:nth-of-type(3) {
 @media screen and (min-width: 900px) {
   :root {
     --text-x-position: 70dvw;
-
-    --line-thickness: 2px;
+    --text-y-position-up: -110dvh;
+    --text-y-position-down: 310dvh;
+    --text-y-position-inview: clamp(60dvw, 40dvw + 28rem, 80dvw);
   }
 
   body {
@@ -175,10 +168,13 @@ div.credit:nth-of-type(3) {
 
 @media screen and (min-width: 1000px) {
   :root {
-    --text-x-position: 12rem;
+    --text-x-position: 9.5rem;
     --text-y-position-up: -20rem;
     --text-y-position-down: 90rem;
     --text-y-position-inview: 25rem;
+
+    --font-size-md: 6rem;
+    --font-size-sm: 4.5rem;
   }
 
   .title {
@@ -187,14 +183,8 @@ div.credit:nth-of-type(3) {
     max-width: 1000px;
   }
 
-  .credit {
-    font-size: 7rem;
-  }
-
   .title-credit {
     width: 60%;
-    --text-x-position: 12rem;
-    --text-y-position-inview: 40dvh;
   }
 }
 
@@ -213,12 +203,6 @@ div.credit:nth-of-type(3) {
 @keyframes exit-credit-down {
   to {
     translate: var(--text-x-position) var(--text-y-position-down);
-  }
-}
-
-@keyframes scroll {
-  to {
-    translate: 0 25vw;
   }
 }
 
