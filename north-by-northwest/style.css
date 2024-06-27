@@ -120,7 +120,7 @@ div.credit:nth-of-type(3) {
     --text-x-position: 60dvw;
     --text-y-position-up: -25dvh;
     --text-y-position-down: 225dvh;
-    --text-y-position-inview: clamp(60dvw, 25dvw + 26rem, 80dvw);
+    --text-y-position-inview: clamp(60dvw, 27dvw + 26rem, 80dvw);
 
     --font-size-md: clamp(1rem, 12dvw + 2.2rem, 12rem);
     --font-size-sm: clamp(1rem, 9dvw + 1.2rem, 12rem);
@@ -137,10 +137,9 @@ div.credit:nth-of-type(3) {
 
 @media screen and (min-width: 800px) {
   :root {
-    --text-x-position: 60dvw;
     --text-y-position-up: -40dvh;
     --text-y-position-down: 240dvh;
-    --text-y-position-inview: 91dvh;
+    --text-y-position-inview: clamp(60dvw, 30dvw + 28rem, 80dvw);
   }
 
   body {
@@ -150,10 +149,6 @@ div.credit:nth-of-type(3) {
   .title {
     transform: translate3d(0, -80dvw, -280px) rotateY(6deg) rotate(-28deg)
       skewX(-25deg);
-  }
-
-  .title-credit {
-    --text-y-position-inview: 80dvh;
   }
 }
 
