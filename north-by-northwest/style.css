@@ -11,6 +11,9 @@
 
   --vertical-gap: 3%;
 
+  --font-size-md: clamp(1rem, 8dvw + 1.1rem, 12rem);
+  --font-size-sm: clamp(1rem, 6dvw + 0.6rem, 12rem);
+
   --text-x-position: 50dvw;
   --text-y-position-up: -30dvh;
   --text-y-position-down: 130dvh;
@@ -58,7 +61,9 @@ body {
 .credit {
   position: absolute;
   color: white;
-  font-size: clamp(1rem, 13dvw + 1.1rem, 12rem);
+
+  font-size: var(--font-size-md);
+
   font-family: "Franklin Gothic", sans-serif;
 
   animation-name: introduce-credit, exit-credit-up;
@@ -73,6 +78,8 @@ div.credit:nth-of-type(1) {
   translate: var(--text-x-position) var(--text-y-position-up);
 
   animation-name: introduce-credit, exit-credit-down;
+
+  /* animation: none; */
 }
 
 /* positioned above */
@@ -83,7 +90,7 @@ div.credit:nth-of-type(2) {
   display: block;
 
   translate: var(--text-x-position) var(--text-y-position-down);
-  font-size: clamp(1rem, 8dvw + 1.1rem, 12rem);
+  font-size: var(--font-size-md);
 }
 
 /* positioned above*/
@@ -91,7 +98,7 @@ div.credit:nth-of-type(3) {
   --credit-reveal-beginning: 15.5s;
   display: block;
 
-  font-size: clamp(1rem, 6dvw + 0.6rem, 12rem);
+  font-size: var(--font-size-sm);
   translate: var(--text-x-position) var(--text-y-position-up);
 
   animation-name: introduce-credit, exit-credit-down;
@@ -113,7 +120,10 @@ div.credit:nth-of-type(3) {
     --text-x-position: 60dvw;
     --text-y-position-up: -25dvh;
     --text-y-position-down: 225dvh;
-    --text-y-position-inview: 85dvh;
+    --text-y-position-inview: clamp(60dvw, 25dvw + 26rem, 80dvw);
+
+    --font-size-md: clamp(1rem, 12dvw + 2.2rem, 12rem);
+    --font-size-sm: clamp(1rem, 9dvw + 1.2rem, 12rem);
 
     --line-thickness: 2px;
   }
@@ -122,14 +132,6 @@ div.credit:nth-of-type(3) {
     width: 240vw;
     transform: translate3d(0, -77dvw, -300px) rotateY(6deg) rotate(-28deg)
       skewX(-25deg);
-  }
-
-  .credit {
-    font-size: clamp(1rem, 20dvw + 1.1rem, 12rem);
-  }
-
-  .title-credit {
-    --text-y-position-inview: 60dvh;
   }
 }
 
