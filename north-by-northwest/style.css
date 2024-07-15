@@ -482,7 +482,6 @@ div.credit:nth-of-type(3) {
     translate: 0 5%;
   }
 
-  /* first descending line */
   & .line:nth-child(16) {
     translate: 0 -11%;
   }

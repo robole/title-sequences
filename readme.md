@@ -187,6 +187,18 @@ The animation is a CSS animation, but uses JavaScript to toggle a class to trigg
 - The original typeface is _Damaged Guts_. I chose a free alternative called _CF Punk Fashion_ as a basis for making my own text. I converted the text to SVG paths and added more "damage" to get closer to the look of the original!
 - I chose to do the animation in CSS, but have it triggered by JavaScript. I did begin by using GSAP and noticed that the equivalent of `translateX(50%)` didn't work as expected. It works as expected in CSS. I don't know why!
 
+### North by Northwest
+
+North by Northwest is a 1959 American spy thriller film produced and directed by Alfred Hitchcock,
+
+![A screenshot of the north by northwest title card. A green background has a criss-cross of blue lines that mimicks the exterior of a skyscraper. The title 'north by northwest' is in the center.](/north-by-northwest/img/screenshot.png)
+
+View the [codepen](https://codepen.io/robjoeol/pen/RwmOeyq).
+
+#### Implementation notes
+
+This is a CSS animation.
+
 ## Attribution and disclaimer
 
 All fonts used are free to use. Some are free only for personal use including:
@@ -202,15 +214,3 @@ I have taken some clips from songs to accompany some of the titles. The songs ar
 	- Main Theme by Maribeth Solomon
 - For Stranger Things:
 	- The theme song is by Kyle Dixon and Michael Stein.
-
-### North by Northwest
-
-North by Northwest is a 1959 American spy thriller film produced and directed by Alfred Hitchcock,
-
-![A screenshot of the north by northwest title card. A green background has a criss-cross of blue lines that mimicks the exterior of a skyscraper. The title 'north by northwest' is in the center.](/north-by-northwest/img/screenshot.png)
-
-View the [codepen](https://codepen.io/robjoeol/pen/RwmOeyq).
-
-#### Implementation notes
-
-This is a CSS animation.
