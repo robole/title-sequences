@@ -1,0 +1,116 @@
+/* "Solido Compressed Bold” is original font used */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --text-color: yellow;
+  --bg-color: black;
+}
+
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+h1 {
+  position: relative;
+  color: var(--text-color);
+
+  grid-row: 1;
+  grid-column: 1;
+
+  font-size: 10rem;
+  font-family: "Bebas Neue", Oswald, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  text-transform: uppercase;
+  line-height: 1;
+
+  height: fit-content;
+  margin: 0;
+
+  & i {
+    position: relative;
+    font-style: normal;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      z-index: -1;
+
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+
+      clip-path: polygon(48% 17%, 15% 100%, 79.25% 100%);
+
+      background-color: var(--text-color);
+    }
+  }
+}
+
+.word {
+  display: block;
+  scale: 100% 130%;
+  transform-origin: center;
+
+  &:nth-of-type(1) {
+    position: absolute;
+    translate: 2.2em 1.7em;
+    font-size: 0.1em;
+  }
+
+  &:nth-of-type(3) {
+    scale: 125% 130%;
+    margin-inline-start: 10%;
+  }
+}
+
+.guy {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+
+  width: 2.5rem;
+
+  mix-blend-mode: difference;
+
+  translate: 0 -500%;
+  animation: fall 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.5, 0.47, 1.06);
+}
+
+@keyframes fall {
+  to {
+    translate: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 15rem;
+  }
+
+  .guy {
+    width: 4rem;
+  }
+}

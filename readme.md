@@ -33,6 +33,7 @@ So far, these are the title sequences:
 1. [Cocktail](#cocktail)
 1. [Orange Is The New Black](#orange-is-the-new-black)
 1. [North by Northwest](#north-by-northwest)
+1. [The Fall Guy](#the-fall-guy)
 <!-- /TOC -->
 
 ### Schitts Creek
@@ -189,11 +190,21 @@ The animation is a CSS animation, but uses JavaScript to toggle a class to trigg
 
 ### North by Northwest
 
-North by Northwest is a 1959 American spy thriller film produced and directed by Alfred Hitchcock,
+[North by Northwest](https://en.wikipedia.org/wiki/North_by_Northwest) is a 1959 American spy thriller film produced and directed by Alfred Hitchcock,
 
 ![A screenshot of the north by northwest title card. A green background has a criss-cross of blue lines that mimicks the exterior of a skyscraper. The title 'north by northwest' is in the center.](/north-by-northwest/img/screenshot.png)
 
 View the [codepen](https://codepen.io/robjoeol/pen/RwmOeyq).
+
+#### Implementation notes
+
+This is a CSS animation.
+
+### The Fall Guy
+
+[The Fall Guy](https://en.wikipedia.org/wiki/The_Fall_Guy_(2024_film)) is a 2024 American action comedy.
+
+![A screenshot of the fallguy title card.](/the-fall-guy/img/screenshot.png)
 
 #### Implementation notes
 
