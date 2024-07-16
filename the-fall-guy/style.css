@@ -1,8 +1,13 @@
 /* "Solido Compressed Bold” is original font used */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* https://raw.githubusercontent.com/robole/title-sequences/main/fall-guy/bebasneue.ttf */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./bebasneue.ttf");
+}
 
 :root {
-  --text-color: yellow;
+  --color: yellow;
   --bg-color: black;
 }
 
@@ -28,7 +33,7 @@ body {
 
 h1 {
   position: relative;
-  color: var(--text-color);
+  color: var(--color);
 
   grid-row: 1;
   grid-column: 1;
@@ -62,7 +67,7 @@ h1 {
 
       clip-path: polygon(48% 17%, 15% 100%, 79.25% 100%);
 
-      background-color: var(--text-color);
+      background-color: var(--color);
     }
   }
 }
