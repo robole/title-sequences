@@ -11,6 +11,7 @@ https://codepen.io/collection/nNmwgP
 @font-face {
   font-family: "Bebas Neue";
   src: url("./bebasneue.ttf");
+  font-display: swap;
 }
 
 :root {
@@ -23,10 +24,6 @@ https://codepen.io/collection/nNmwgP
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   width: 100dvw;
   height: 100dvh;
@@ -35,7 +32,6 @@ body {
   place-items: center;
 
   background-color: var(--bg-color);
-  overflow: hidden;
 }
 
 h1 {
@@ -103,6 +99,7 @@ h1 {
   mix-blend-mode: difference;
 
   translate: 0 -500%;
+
   animation: fall 2s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.5, 0.47, 1.06);
