@@ -1,6 +1,13 @@
-/* "Solido Compressed Bold” is original font used */
+/*
 
-/* https://raw.githubusercontent.com/robole/title-sequences/main/fall-guy/bebasneue.ttf */
+Part of Title Sequences collection:
+https://codepen.io/collection/nNmwgP
+
+"Solido Compressed Bold” is original font used
+
+*/
+
+/* https://raw.githubusercontent.com/robole/title-sequences/main/the-fall-guy/bebasneue.ttf */
 @font-face {
   font-family: "Bebas Neue";
   src: url("./bebasneue.ttf");
@@ -34,9 +41,6 @@ body {
 h1 {
   position: relative;
   color: var(--color);
-
-  grid-row: 1;
-  grid-column: 1;
 
   font-size: 10rem;
   font-family: "Bebas Neue", Oswald, sans-serif;

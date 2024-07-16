@@ -206,6 +206,8 @@ This is a CSS animation.
 
 ![A screenshot of the fallguy title card.](/the-fall-guy/img/screenshot.png)
 
+View the [codepen](https://codepen.io/robjoeol/full/QWXjqYd).
+
 #### Implementation notes
 
 This is a CSS animation.
