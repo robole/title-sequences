@@ -1,87 +1,25 @@
-/*
-Click logo to restart animation.
-
-Click unmute button for sound fx.
-
-Source Code:
-
-https://github.com/robole/title-sequences
-*/
-
 :root {
-  --width: 400px;
   --animation-duration: 0.75s;
-}
-
-@media (min-width: 960px) {
-  :root {
-    --width: 600px;
-  }
-
-  body {
-    background-image: url("img/bg-large.jpg");
-
-    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-large.jpg"); */
-  }
-
-  main {
-    height: 100%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 959px) {
-  body {
-    background-image: url("img/bg-med.jpg");
-
-    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-med.jpg"); */
-  }
-
-  main {
-    height: 640px;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --width: 200px;
-  }
-
-  main {
-    height: 320px;
-  }
-
-  body {
-    background-image: url("img/bg-small.jpg");
-
-    /* background-image: url("https://raw.githubusercontent.com/robole/title-sequences/main/orange-is-the-new-black/original/img/bg-small.jpg"); */
-  }
 }
 
 body {
   height: 100vh;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+
+  background-image: url("img/bg.webp");
   background-position: right top;
   background-repeat: no-repeat;
 }
 
-main {
-  display: grid;
-  width: 100%;
-  align-items: center;
-  justify-content: start;
-  grid-template-rows: 1fr;
+#logo {
+  cursor: pointer;
 }
 
-svg {
-  display: block;
-  width: var(--width);
-}
-
-.animation1 {
-  animation: close var(--animation-duration) forwards;
-}
-
-.animation2 {
-  animation: close var(--animation-duration) forwards;
+#bar2 {
   animation-delay: 0.2s;
 }
 
@@ -91,13 +29,12 @@ svg {
   }
 }
 
-.writing {
-  opacity: 0;
+.close-animation {
+  animation: close var(--animation-duration) forwards;
 }
 
-.appear-animation {
-  animation: appear 0.1s forwards;
-  animation-delay: 0.7s;
+#writing {
+  opacity: 0;
 }
 
 @keyframes appear {
@@ -106,43 +43,39 @@ svg {
   }
 }
 
-label {
+.appear-animation {
+  animation: appear 0.1s forwards;
+  animation-delay: 0.7s;
+}
+
+button {
   position: fixed;
   top: 0.75rem;
   right: 0.75rem;
+
   width: calc(1.5rem + 2vw);
   height: calc(1.5rem + 2vw);
+
   background-color: black;
   border-radius: 50%;
+  border: none;
+
   cursor: pointer;
 }
 
-label > svg {
+button svg {
   position: absolute;
   top: 10%;
   right: 10%;
+
   width: 80%;
   height: 80%;
 }
 
-label path {
+button path {
   fill: orange;
 }
 
-label .mute-off {
-  display: none;
-}
-
-input[type="checkbox"] {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-:checked ~ label .mute-off {
-  display: block;
-}
-
-:checked ~ label .mute-on {
+.hide {
   display: none;
 }

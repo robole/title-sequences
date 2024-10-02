@@ -1,50 +1,55 @@
-// let closeAudio = new Audio("audio/jail-close.mp3");
-let closeAudio = new Audio(
-  "https://github.com/robole/title-sequences/raw/main/orange-is-the-new-black/original/audio/jail-close.mp3"
-);
+let closeAudio = new Audio("audio/jail-close.mp3");
+
+let muteButton = document.querySelector("button");
+let muteOnIcon = muteButton.querySelector(".mute-on");
+let muteOffIcon = muteButton.querySelector(".mute-off");
+
+let bars = document.querySelectorAll(".moving-bar");
+let writing = document.querySelector("#writing");
+let logo = document.getElementById("logo");
+
+let timeout;
 
 closeAudio.muted = true;
 closeAudio.playbackRate = 1.5;
-closeAudio.play();
+playAudio();
 
-const volume = document.querySelector("input");
-volume.addEventListener("click", toggleMute);
-
-let bars = document.querySelectorAll(".moving-bar");
-let writing = document.querySelectorAll(".writing");
-
-const logo = document.getElementById("logo");
+muteButton.addEventListener("click", toggleMute);
 logo.addEventListener("click", replay);
-
-let timeout;
 
 function replay() {
   clearTimeout(timeout); // in case it hasnt run yet
   reset();
 
   timeout = setTimeout(() => {
-    bars[0].classList.add("animation1");
-    bars[1].classList.add("animation2");
-
-    for (instance of writing) {
-      instance.classList.add("appear-animation");
-    }
+    bars[0].classList.add("close-animation");
+    bars[1].classList.add("close-animation");
+    writing.classList.add("appear-animation");
 
     playAudio();
   }, 20);
 }
 
 function toggleMute() {
+  // initiate playing the song if it was blocked
+  if (closeAudio.currentTime === 0) {
+    playAudio();
+    closeAudio.pause();
+  }
+
+  muteOnIcon.classList.toggle("hide");
+  muteOffIcon.classList.toggle("hide");
+
   closeAudio.muted = !closeAudio.muted;
 }
 
 function reset() {
   stopAudio();
-  bars[0].classList.remove("animation1");
-  bars[1].classList.remove("animation2");
-  for (instance of writing) {
-    instance.classList.remove("appear-animation");
-  }
+
+  bars[0].classList.remove("close-animation");
+  bars[1].classList.remove("close-animation");
+
+  writing.classList.remove("appear-animation");
 }
 
 function stopAudio() {
@@ -53,5 +58,9 @@ function stopAudio() {
 }
 
 function playAudio() {
-  closeAudio.play();
+  try {
+    closeAudio.play();
+  } catch (error) {
+    console.error(error);
+  }
 }
