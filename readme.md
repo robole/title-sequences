@@ -223,7 +223,7 @@ This is a CSS animation.
 
 This is a CSS animation.
 
-Font is probably FF Blur (commercial license). I used a free font called [Distro Bold](https://www.ffonts.net/Distro-Bold.font).
+The font  used in the title is probably FF Blur (commercial license). I used a free font called [Distro Bold](https://www.ffonts.net/Distro-Bold.font).
 
 Pencil/marker stroke effect uses a turbulence SVG filter e.g. [CSS Tricks pencil effect article](https://css-tricks.com/creating-a-pencil-effect-in-svg/).
 

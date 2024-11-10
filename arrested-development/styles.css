@@ -56,8 +56,8 @@ h1 {
   0% {
     opacity: 1;
     scale: 4;
-    filter: blur(8px);
     translate: 100%;
+    filter: blur(8px);
   }
 
   to {
