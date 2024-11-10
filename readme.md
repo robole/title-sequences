@@ -34,6 +34,7 @@ So far, these are the title sequences:
 1. [Orange Is The New Black](#orange-is-the-new-black)
 1. [North by Northwest](#north-by-northwest)
 1. [The Fall Guy](#the-fall-guy)
+1. [Arrested Developement](#arrested-developement)
 <!-- /TOC -->
 
 ### Schitts Creek
@@ -211,6 +212,20 @@ View the [codepen](https://codepen.io/robjoeol/full/QWXjqYd).
 #### Implementation notes
 
 This is a CSS animation.
+
+### Arrested Developement
+
+[Arrested Development](https://en.wikipedia.org/wiki/Arrested_Development) is an American television satirical sitcom.
+
+![A screenshot of the arrested development title card.](/arrested-development/img/reference.png)
+
+#### Implementation notes
+
+This is a CSS animation.
+
+Font is probably FF Blur (commercial license). I used a free font called [Distro Bold](https://www.ffonts.net/Distro-Bold.font).
+
+Pencil/marker stroke effect uses a turbulence SVG filter e.g. [CSS Tricks pencil effect article](https://css-tricks.com/creating-a-pencil-effect-in-svg/).
 
 ## Attribution and disclaimer
 

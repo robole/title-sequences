@@ -13,7 +13,6 @@
    - [Split text](https://codemyui.com/black-mirror-style-cracked-glitchy-text-effect/)
    - Difficulty: hard.
 1. Pick some sequences from [Catch Me If You Can](https://www.youtube.com/watch?v=aN715Rp4L74)
-1. https://www.artofthetitle.com/title/arrested-development/
 1. More Marvelous Mrs. Maisel <https://www.youtube.com/watch?v=gq-zPalK8H4> ?
 1. Very difficult: https://www.artofthetitle.com/title/scott-pilgrim-vs-the-world/
 

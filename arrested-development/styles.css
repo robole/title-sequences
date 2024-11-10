@@ -1,4 +1,18 @@
-@import url(https://db.onlinewebfonts.com/c/7e8601c112331686d7e3e6b525d0793b?family=BlurWeb-Light+W03+Regular);
+@font-face {
+  font-family: "Distro Bold";
+  src: url("./distro-bold.woff");
+  font-display: block;
+}
+
+:root {
+  --initial-delay: 50ms;
+  --draw-delay: 250ms;
+
+  --focus-animation-duration: 300ms;
+  --draw-animation-duration: 400ms;
+  --jump-animation-duration: 30ms;
+}
+
 *,
 *::before {
   box-sizing: border-box;
@@ -11,6 +25,8 @@ body {
 
   display: grid;
   place-items: center;
+
+  overflow: hidden;
 }
 
 h1 {
@@ -18,14 +34,50 @@ h1 {
   grid-column: 1;
 
   font-size: 5rem;
-  font-family: "BlurWeb-Light W03 Regular";
+  font-family: "Distro Bold", serif;
 
   margin: 0;
+  opacity: 0;
+
+  animation-name: focus, jump;
+  animation-delay: var(--initial-delay),
+    calc(
+      var(--initial-delay) + var(--focus-animation-duration) + var(--draw-delay) +
+        var(--draw-animation-duration)
+    );
+  animation-duration: var(--focus-animation-duration),
+    var(--jump-animation-duration);
+  animation-iteration-count: 1, 3;
+  animation-direction: normal, alternate;
+  animation-fill-mode: forwards, none;
+}
+
+@keyframes focus {
+  0% {
+    opacity: 1;
+    scale: 4;
+    filter: blur(8px);
+    translate: 100%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    translate: 0;
+    filter: blur(0);
+  }
+}
+
+@keyframes jump {
+  to {
+    filter: blur(4px);
+    translate: 0 -40%;
+  }
 }
 
 .word {
   display: block;
-  line-height: 0.7;
+  line-height: 0.9;
   height: min-content;
 }
 
@@ -62,11 +114,15 @@ path {
   stroke-dasharray: var(--length);
   stroke-dashoffset: var(--length);
 
-  animation: dash 0.5s linear forwards;
-  animation-timing-function: ease-out;
+  animation-name: draw;
+  animation-delay: calc(
+    var(--initial-delay) + var(--focus-animation-duration) + var(--draw-delay)
+  );
+  animation-duration: var(--draw-animation-duration);
+  animation-fill-mode: forwards;
 }
 
-@keyframes dash {
+@keyframes draw {
   to {
     stroke-dashoffset: 0;
   }
