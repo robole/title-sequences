@@ -33,7 +33,7 @@ h1 {
   grid-row: 1;
   grid-column: 1;
 
-  font-size: 5rem;
+  font-size: clamp(4rem, 1.6522rem + 10.4348vw, 10rem);
   font-family: "Distro Bold", serif;
 
   margin: 0;
@@ -70,8 +70,8 @@ h1 {
 
 @keyframes jump {
   to {
-    filter: blur(4px);
-    translate: 0 -40%;
+    filter: blur(8px);
+    translate: 0 -30%;
   }
 }
 
@@ -105,7 +105,7 @@ h1 {
 svg {
   grid-row: 1;
   grid-column: 1;
-  width: 23rem;
+  width: clamp(22rem, 11.4348rem + 46.9565vw, 49rem);
 }
 
 path {
