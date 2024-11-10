@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#c11d2e"/>
+      <stop offset="1" stop-color="#a21a25"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="b" x1="5.033" y1="94.042" x2="202.633" y2="94.042" gradientUnits="userSpaceOnUse" gradientTransform="translate(-4 -8.138)"/>
+  </defs>
+  <path d="M113.19 64.48c-5.924-4.83-15.165-5.534-24.343-5.743-39.77-.907-87.15 27.995-86.858 47.912.33 22.633 46.493 27.7 99.035 27.157 60.87-.627 88.115-21.994 95.875-43.258 8.5-23.29-53.938-46.112-90.84-52.155-15.104-2.474-75.355 6.15-94.086 17.236" fill="none" stroke="url(#b)" stroke-width="1.611" stroke-linecap="round" paint-order="stroke fill markers"/>
+</svg>
